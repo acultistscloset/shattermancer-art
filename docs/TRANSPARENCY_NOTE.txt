@@ -1,0 +1,2 @@
+All production PNG artwork is validated for an RGBA alpha channel.
+The final package contains no checkerboard, white, gray, or black matte backgrounds.
