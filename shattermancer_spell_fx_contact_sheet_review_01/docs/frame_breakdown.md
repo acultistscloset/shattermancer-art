@@ -6,7 +6,7 @@
 | Charge | 4–6 | Motes coalesce; core grows; orbit tightens. |
 | Charge | 7–9 | Pressure reaches a held peak and breathes outward. |
 | Charge | 10–12 | Core relaxes to the starting size and particle spacing for the loop seam. |
-| Travel | 1–8 | Central neutral knot remains fixed; tail length and wave complete one seamless cycle. |
+| Travel | 1–8 | Authored horizontally left-to-right: knot leads on the right, trail extends left. Rotate the complete sprite −30° around the cell center for the up-right battle path. Tail length and wave complete one seamless cycle. |
 | Element impact | 1–3 | Immediate contact and compression. |
 | Element impact | 4–8 | Radial elemental burst grows to a one-beat peak. |
 | Element impact | 9–14 | Substance fragments separate, dim, and clear to empty. |

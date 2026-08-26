@@ -27,6 +27,16 @@
   },
   "charge_contains_staff_art": false,
   "hitflash_subject": "element-neutral radial contact flare",
+  "travel_orientation": {
+    "source_axis": "+X",
+    "source_motion": "left-to-right",
+    "leading_knot_side": "right",
+    "baked_trail_side": "left",
+    "runtime_rotation_degrees": -30,
+    "runtime_destination": "diagonally up-right",
+    "pivot": "center of the 256 x 256 cell",
+    "mirror": false
+  },
   "review_questions": [
     "Approve the revised contact-sheet motion before production Charge sheets begin."
   ],
@@ -43,8 +53,8 @@
       "filename": "travel_contact_sheet.png",
       "relative_path": "previews/travel_contact_sheet.png",
       "width": 1200,
-      "height": 720,
-      "sha256": "eec80a73654813f8b0201fde1c26c6e451b8e83e2c421a185a08ff45f3c0c026",
+      "height": 780,
+      "sha256": "0f3afb4c4966ef267342f82a2b1aa2d415a436ba18e6f3d261d9926e60c25526",
       "role": "Rough contact sheet; silhouettes and blocked color only."
     },
     {

@@ -9,6 +9,7 @@ This package contains three rough contact sheets and **no finished production fr
 3. Casting treatments are keyed to exactly six elements—fire, water, nature, lightning, ice, and shadow. There are no discipline-specific animation variants.
 4. Charge sheets contain only the centered magical effect. They contain no painted staff and no portion of the wright.
 5. `fx_hitflash.png` is an element-neutral radial contact flare, not a creature silhouette.
+6. `fx_travel_bolt.png` is authored horizontally flying left-to-right: the knot leads on the right and its baked trail extends left. Rotate the complete sprite −30° around the cell center for the battle's diagonally up-right path. Never mirror it.
 
 ## Revised production inventory
 

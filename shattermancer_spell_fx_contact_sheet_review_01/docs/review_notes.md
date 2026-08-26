@@ -5,7 +5,7 @@ This package is the required first review gate for the Shattermancer spell-effec
 ## Proposed motion
 
 - **Charge:** gather → tighten → pressure peak → release breath → reset. Frames 12 and 1 share the same small-core and three-mote configuration so the loop can close invisibly.
-- **Travel:** the knot stays centered in its cell while its tail length and wave cycle. Frames 8 and 1 match.
+- **Travel:** the source sprite is authored horizontally along +X, flying left-to-right. The knot leads on the right and the baked trail extends left. Rotate the complete sprite −30° around the cell center to obtain the battle's diagonally up-right trajectory; never mirror it. The knot stays centered while tail length and wave cycle, and frames 8 and 1 match.
 - **Element impact / Fracture:** contact, compression, fast radial bite, one held peak, outward substance fragments, then full dissipation.
 - **Fizzle:** loses cohesion early, drains toward grey, sags, sputters, and falls. No flash, no ring, and no satisfying peak.
 - **Shatter:** compresses into a central plane, cracks it, throws unmistakable shards, and clears completely.
