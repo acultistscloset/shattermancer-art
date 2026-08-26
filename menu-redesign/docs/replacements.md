@@ -1,0 +1,71 @@
+# Replacement List
+
+Each line identifies the prior numbered asset or preview replaced by this update.
+
+- `01_shared/002_foreground_shadow_overlay.png` — replaces previous asset 002.
+- `01_shared/003_wright_neutral.png` — replaces previous asset 003.
+- `01_shared/004_wright_ground_shadow.png` — replaces previous asset 004.
+- `01_shared/005_shattermancer_logo.png` — replaces previous asset 005.
+- `02_main_menu/011_pyromancer_manifestation.png` — replaces previous asset 011.
+- `02_main_menu/012_cryomancer_manifestation.png` — replaces previous asset 012.
+- `02_main_menu/013_warlock_manifestation.png` — replaces previous asset 013.
+- `02_main_menu/014_apothecary_manifestation.png` — replaces previous asset 014.
+- `02_main_menu/015_alchemist_manifestation.png` — replaces previous asset 015.
+- `02_main_menu/016_hexweaver_manifestation.png` — replaces previous asset 016.
+- `02_main_menu/017_diviner_manifestation.png` — replaces previous asset 017.
+- `02_main_menu/018_manifestation_reflected_light_overlay.png` — replaces previous asset 018.
+- `02_main_menu/019_menu_button_default.png` — replaces previous asset 019.
+- `02_main_menu/020_menu_button_selected_overlay.png` — replaces previous asset 020.
+- `02_main_menu/021_menu_button_pressed_overlay.png` — replaces previous asset 021.
+- `02_main_menu/022_menu_button_disabled_overlay.png` — replaces previous asset 022.
+- `02_main_menu/023_label_new_game.png` — replaces previous asset 023.
+- `02_main_menu/024_label_continue.png` — replaces previous asset 024.
+- `02_main_menu/025_label_start_anew.png` — replaces previous asset 025.
+- `02_main_menu/026_label_settings.png` — replaces previous asset 026.
+- `03_disciplines/006_disciplines_heading.png` — replaces previous asset 006.
+- `03_disciplines/007_back_button_default.png` — replaces previous asset 007.
+- `03_disciplines/008_back_button_pressed_overlay.png` — replaces previous asset 008.
+- `03_disciplines/009_back_arrow.png` — replaces previous asset 009.
+- `03_disciplines/010_lock_medallion.png` — replaces previous asset 010.
+- `03_disciplines/027_selector_default.png` — replaces previous asset 027.
+- `03_disciplines/028_selector_selected_overlay.png` — replaces previous asset 028.
+- `03_disciplines/029_selector_pressed_overlay.png` — replaces previous asset 029.
+- `03_disciplines/030_selector_locked_overlay.png` — replaces previous asset 030.
+- `03_disciplines/031_icon_pyromancer.png` — replaces previous asset 031.
+- `03_disciplines/032_icon_cryomancer.png` — replaces previous asset 032.
+- `03_disciplines/033_icon_warlock.png` — replaces previous asset 033.
+- `03_disciplines/034_icon_apothecary.png` — replaces previous asset 034.
+- `03_disciplines/035_icon_alchemist.png` — replaces previous asset 035.
+- `03_disciplines/036_icon_hexweaver.png` — replaces previous asset 036.
+- `03_disciplines/037_icon_diviner.png` — replaces previous asset 037.
+- `03_disciplines/038_pyromancer_aura_selected_overlay.png` — replaces previous asset 038.
+- `03_disciplines/039_cryomancer_aura_selected_overlay.png` — replaces previous asset 039.
+- `03_disciplines/040_warlock_aura_selected_overlay.png` — replaces previous asset 040.
+- `03_disciplines/041_apothecary_aura_selected_overlay.png` — replaces previous asset 041.
+- `03_disciplines/042_alchemist_aura_selected_overlay.png` — replaces previous asset 042.
+- `03_disciplines/043_hexweaver_aura_selected_overlay.png` — replaces previous asset 043.
+- `03_disciplines/044_diviner_aura_selected_overlay.png` — replaces previous asset 044.
+- `03_disciplines/045_wright_pyromancer_light_overlay.png` — replaces previous asset 045.
+- `03_disciplines/046_wright_cryomancer_light_overlay.png` — replaces previous asset 046.
+- `03_disciplines/047_wright_warlock_light_overlay.png` — replaces previous asset 047.
+- `03_disciplines/048_wright_apothecary_light_overlay.png` — replaces previous asset 048.
+- `03_disciplines/049_wright_alchemist_light_overlay.png` — replaces previous asset 049.
+- `03_disciplines/050_wright_hexweaver_light_overlay.png` — replaces previous asset 050.
+- `03_disciplines/051_wright_diviner_light_overlay.png` — replaces previous asset 051.
+- `04_grimoire/052_grimoire_closed.png` — replaces previous asset 052.
+- `04_grimoire/053_grimoire_front_cover.png` — replaces previous asset 053.
+- `04_grimoire/054_grimoire_cover_underside.png` — replaces previous asset 054.
+- `04_grimoire/055_grimoire_open_spread.png` — replaces previous asset 055.
+- `04_grimoire/056_grimoire_page_turn_front_overlay.png` — replaces previous asset 056.
+- `04_grimoire/057_grimoire_page_turn_reverse_overlay.png` — replaces previous asset 057.
+- `04_grimoire/058_grimoire_cast_shadow.png` — replaces previous asset 058.
+- `04_grimoire/059_discipline_icon_socket.png` — replaces previous asset 059.
+- `04_grimoire/060_book_button_default.png` — replaces previous asset 060.
+- `04_grimoire/061_book_button_selected_overlay.png` — replaces previous asset 061.
+- `04_grimoire/062_book_button_pressed_overlay.png` — replaces previous asset 062.
+- `04_grimoire/063_book_button_disabled_overlay.png` — replaces previous asset 063.
+- `04_grimoire/064_label_view_talent_tree.png` — replaces previous asset 064.
+- `04_grimoire/065_label_venture_forth.png` — replaces previous asset 065.
+- `04_grimoire/066_grimoire_selected_page_light_overlay.png` — replaces previous asset 066.
+- `05_previews/disciplines_preview.png` — replaces the previous Disciplines preview.
+- `05_previews/main_menu_preview.png` — replaces the previous Main Menu preview.
