@@ -1,0 +1,96 @@
+{
+  "pack": "shattermancer_grimoire_page_buttons_update_01",
+  "version": "1.0.0-review",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "This update contains only the six replacement grimoire page button files.",
+    "All production pieces use one shared 920 x 200 canvas; state files contain changes only.",
+    "The plate centre remains clear for separately supplied runtime lettering.",
+    "The thin parchment lip borrows the sampled page family around #C5A26E; leather remains within the warm #6B4A2E through #4A3220 family and never approaches black.",
+    "The recessed shadow falls inward along the upper and left sides; no exterior drop shadow is baked into the plate.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "book_button_default.png",
+      "relative_path": "updates/book_buttons/book_button_default.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "6d014319361a342a93420a92ef0a65048ecf1d68b5cf537ae9b2a8d947c73514",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Neutral resting recessed-leather grimoire page button plate; full art."
+    },
+    {
+      "filename": "book_button_pressed_overlay.png",
+      "relative_path": "updates/book_buttons/book_button_pressed_overlay.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "8e931aae20089d3fe607b6e41188f9fc554213b5a18b13618aa293e02f5c7883",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Changes-only overlay that deepens the upper-left inner shadow and darkens the seated leather."
+    },
+    {
+      "filename": "book_button_disabled_overlay.png",
+      "relative_path": "updates/book_buttons/book_button_disabled_overlay.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "c7f81a669ab9df1d2f7ab0e0f4dc5afab8d4a27fa85fec740c971f29ead8dc95",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Changes-only grey-brown drying overlay that removes colour and sheen while remaining legible."
+    },
+    {
+      "filename": "book_button_hover_overlay.png",
+      "relative_path": "updates/book_buttons/book_button_hover_overlay.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "74cd67e61bcdef5ca36bbe878adaecf186b097972fd8744a8a71a2efdb9548bd",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Changes-only subtle upper-left handled sheen for the optional desktop hover state."
+    },
+    {
+      "filename": "book_button_primary.png",
+      "relative_path": "updates/book_buttons/book_button_primary.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "1766d471a83b45963274b7754ad9749c7ee8b463578a4ea3d3cfd20dd9443bca",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warmer, richer full plate for Venture Forth with deeper tooling and handled sheen."
+    },
+    {
+      "filename": "book_button_secondary.png",
+      "relative_path": "updates/book_buttons/book_button_secondary.png",
+      "width": 920,
+      "height": 200,
+      "sha256": "373dd3274555db83082552d90c75fa1d2eeae37f94bda96adee35023873436c0",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Quieter, drier full plate for View Talent Tree from the same leather family."
+    },
+    {
+      "filename": "grimoire_page_buttons_preview.png",
+      "relative_path": "previews/grimoire_page_buttons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "aa9f8f207d62e0057b970d1875776587b6a880182c03b6a80ca93460bd561139",
+      "repeat_count": 1,
+      "baked_text": "review headings, state labels, placement annotation, DISCIPLINE, VIEW TALENT TREE, and VENTURE FORTH",
+      "role": "Implementation-intent preview on sampled parchment; production pieces are roughly placed."
+    }
+  ]
+}

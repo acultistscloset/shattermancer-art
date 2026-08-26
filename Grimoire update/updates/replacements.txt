@@ -1,0 +1,6 @@
+updates/book_buttons/book_button_default.png replaces the previous 060_book_button_default.png resting plate.
+updates/book_buttons/book_button_pressed_overlay.png replaces the previous 062_book_button_pressed_overlay.png.
+updates/book_buttons/book_button_disabled_overlay.png replaces the previous 063_book_button_disabled_overlay.png.
+updates/book_buttons/book_button_hover_overlay.png replaces the previous 061_book_button_selected_overlay.png as the light-emphasis state.
+updates/book_buttons/book_button_primary.png replaces reuse of the previous 060_book_button_default.png for Venture Forth.
+updates/book_buttons/book_button_secondary.png replaces reuse of the previous 060_book_button_default.png for View Talent Tree.
