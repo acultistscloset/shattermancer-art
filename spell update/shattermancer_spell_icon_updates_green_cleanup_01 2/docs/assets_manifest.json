@@ -1,0 +1,52 @@
+{
+  "pack": "shattermancer_spell_icon_updates_green_cleanup_01",
+  "version": "1.0.0-update",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "production_notes": [
+    "This update contains only the two changed spell icon files.",
+    "The green extraction field and green/cyan matte contamination were removed.",
+    "Production icons contain no baked lettering.",
+    "Painted subjects retain 90.6% longest-dimension occupancy and 40 px legibility."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_rupture.png",
+      "relative_path": "updates/hexweaver/icon_spell_rupture.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "37205391e0f8358354fe4dd73d946a559af4876c967ffeb3b69e630dc0d21b4f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "replaces": "shattermancer_spell_icons_hexweaver_batch_01/spell_icons/icon_spell_rupture.png",
+      "role": "Corrected Hexweaver Rupture spell icon with trapped chroma field removed."
+    },
+    {
+      "filename": "icon_spell_gold_shard.png",
+      "relative_path": "updates/alchemist/icon_spell_gold_shard.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ffc53ec650b69f114157e18520b15822b811ffdc47c80355e3504cede2c08517",
+      "repeat_count": 1,
+      "baked_text": [],
+      "replaces": "shattermancer_spell_icons_alchemist_batch_01/spell_icons/icon_spell_gold_shard.png",
+      "role": "Corrected Alchemist Gold Shard spell icon with trapped chroma field removed."
+    },
+    {
+      "filename": "green_cleanup_update_preview.png",
+      "relative_path": "previews/green_cleanup_update_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "c54a2657bc548e37587f0f22c0e7ff60f2da8c8c7c065c0f725a11b199168a50",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, alpha-review annotations, and scale label",
+      "role": "Correction review preview on dark, mid-value, and light fields."
+    }
+  ]
+}

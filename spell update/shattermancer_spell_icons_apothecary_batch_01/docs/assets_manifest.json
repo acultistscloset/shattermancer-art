@@ -1,0 +1,137 @@
+{
+  "pack": "shattermancer_spell_icons_apothecary_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Apothecary",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "Water-paid spells use deep blue into cyan and depict visibly wet liquid, never ice or crystal.",
+    "Nature-paid spells use medicinal green into muted antique gold.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_decoction.png",
+      "relative_path": "spell_icons/icon_spell_decoction.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8b7d057e81e4ff9043f8876f82b21fd7caf2d78668fe100e6055a632e122d7ee",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Decoction; paid in nature. A medicinal brew is prepared immediately in a battered decoction vessel."
+    },
+    {
+      "filename": "icon_spell_catalysis.png",
+      "relative_path": "spell_icons/icon_spell_catalysis.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f1716364b4094c5a039fb4cd8e21c7c63794eb8fba1ffe8cfeaece2db4269cbe",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Catalysis; paid in water. One wet draught forks into two matching effects."
+    },
+    {
+      "filename": "icon_spell_panacea.png",
+      "relative_path": "spell_icons/icon_spell_panacea.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8bd5f5c77ff5dfb893687015f493f228556f5e0759f53ac625feee69d1ffdf48",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Panacea; paid in nature. Two restorative vials are brewed together with immediate healing."
+    },
+    {
+      "filename": "icon_spell_alkahest.png",
+      "relative_path": "spell_icons/icon_spell_alkahest.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "90db93394aa296febd7597d70083b46bbc4d505bb5d40768dd595e21d8a02686",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Alkahest; paid in water. A universal wet solvent permanently dissolves one elemental ward."
+    },
+    {
+      "filename": "icon_spell_grand_elixir.png",
+      "relative_path": "spell_icons/icon_spell_grand_elixir.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "789fdb5a74e109ce43754c4939bd52ccd7c4db3ff25f62734787296d7e07e112",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Grand Elixir; paid in nature. Two stored draughts merge into one doubled grand elixir."
+    },
+    {
+      "filename": "icon_spell_poultice.png",
+      "relative_path": "spell_icons/icon_spell_poultice.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "740cc50d58056ed9e5d2b9c8a5f914f618ba92187afc034abb4aef592940e42b",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Poultice; paid in nature. A worn herbal compress turns a stocked satchel into healing."
+    },
+    {
+      "filename": "icon_spell_sublimate.png",
+      "relative_path": "spell_icons/icon_spell_sublimate.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "525f613920e6cecada630ee2510c4e103e64b142cb517962c479882a46cfcf63",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Sublimate; paid in nature. A vial boils away and its vapour becomes chosen mana."
+    },
+    {
+      "filename": "icon_spell_shatterflask.png",
+      "relative_path": "spell_icons/icon_spell_shatterflask.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "aa68ab15d5f4764ef9de2ac430117313f0487e14faf842f78aaf3fba7641805b",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Shatterflask; paid in water. A thrown wet vial breaks and converts its contents into damage."
+    },
+    {
+      "filename": "icon_spell_taste_test.png",
+      "relative_path": "spell_icons/icon_spell_taste_test.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9f274349ee1963ee61fd8723a06b1e34870233bb405a3ea449e6c2fb200110c5",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Taste Test; paid in water. A tasting vessel reads whether one hidden rune repeats elsewhere."
+    },
+    {
+      "filename": "icon_spell_reagent_reading.png",
+      "relative_path": "spell_icons/icon_spell_reagent_reading.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e3394e1797d407e2bd4b654b0c3bcefee93fb10b7fd6503774d0d9a751c76a72",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Apothecary spell icon for Reagent Reading; paid in nature. A timed reagent assay gives an exact reading on the next turn."
+    },
+    {
+      "filename": "apothecary_spell_icons_preview.png",
+      "relative_path": "previews/apothecary_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "9dae6fc86346b9f8a20b02f062207240e4e29b265b1aead417d34c25f3f3e577",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, element labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "pack": "shattermancer_spell_icons_pyromancer_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Pyromancer",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Each icon uses one dominant visual idea and is designed to read at approximately 40 px.",
+    "Lighting is consistently motivated from the upper-left.",
+    "Spellstorm and Scorch Mark use the lightning palette because their paid-in element overrides discipline palette."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_fireball.png",
+      "relative_path": "spell_icons/icon_spell_fireball.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a588a9fbdbf8dbc82e369e9d9b3d49e52f39a9c05fb64d5d7bc337773ed46954",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Fireball; paid in fire. Direct-damage fire projectile."
+    },
+    {
+      "filename": "icon_spell_combustion.png",
+      "relative_path": "spell_icons/icon_spell_combustion.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0c9e8de42b35d2c63292de209e310b09c604f5d36d6d0a6798dd67539d044b0b",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Combustion; paid in fire. Primed internal combustion empowering the next incantation."
+    },
+    {
+      "filename": "icon_spell_spellstorm.png",
+      "relative_path": "spell_icons/icon_spell_spellstorm.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e0c966711cba8ad5b5d4783addec2d2e3d01d05f49f340fe753cb7e090f9021e",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Spellstorm; paid in lightning. Lightning storm-knot dealing damage from prior Fractures."
+    },
+    {
+      "filename": "icon_spell_wall_of_flame.png",
+      "relative_path": "spell_icons/icon_spell_wall_of_flame.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4aaf7f6699864a82b3b6de383313908c6ee958c43ad003796e7c81247908a0dc",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Wall of Flame; paid in fire. Persistent fire barrier that punishes landed blows."
+    },
+    {
+      "filename": "icon_spell_meteor.png",
+      "relative_path": "spell_icons/icon_spell_meteor.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "96fadfe1dae140b425bcfb49db535b88e9916b6be09507990144a3858309813d",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Meteor; paid in fire. Delayed descending meteor strengthened by intervening Fractures."
+    },
+    {
+      "filename": "icon_spell_ashfall.png",
+      "relative_path": "spell_icons/icon_spell_ashfall.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0a6b52c05d95ee5037c4165b326517bf964cc55d275c50e03c9401f8764333c1",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Ashfall; paid in fire. Accumulating ash that burns after enemy turns."
+    },
+    {
+      "filename": "icon_spell_cinderveil.png",
+      "relative_path": "spell_icons/icon_spell_cinderveil.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e9df10b478c87a58b0995f5236e60f0196a5caf5f1e0bfd8b191bec4c43dd1ff",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Cinderveil; paid in fire. Protective ash veil granting Block from accumulated ash."
+    },
+    {
+      "filename": "icon_spell_pyre.png",
+      "relative_path": "spell_icons/icon_spell_pyre.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "11d2945ff8c15fdff6fb692d39c7d7870de2eeedb9b5cd5580372b10b878f286",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Pyre; paid in fire. Consumes accumulated ash in one intense burn."
+    },
+    {
+      "filename": "icon_spell_scorch_mark.png",
+      "relative_path": "spell_icons/icon_spell_scorch_mark.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a132421f2b2c3fc0717e920b178dda3f6415d5aa0f29efd2321405084bf6f3ef",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Scorch Mark; paid in lightning. Lightning brand testing whether one position runs hot or cold."
+    },
+    {
+      "filename": "icon_spell_fan_the_flames.png",
+      "relative_path": "spell_icons/icon_spell_fan_the_flames.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0968b449b1a0656fd9307cca65ab1626b3da68bb8d364b889e2ce1969fc428c5",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Pyromancer spell icon for Fan the Flames; paid in fire. Strengthens the next incantation for each fire rune placed."
+    },
+    {
+      "filename": "pyromancer_spell_icons_preview.png",
+      "relative_path": "previews/pyromancer_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "6134ec7bc2f154041cbe4cad2bb8d716a01f4b78e5393cbbe95b969c29ed50ac",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, element labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

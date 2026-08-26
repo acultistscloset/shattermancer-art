@@ -1,0 +1,137 @@
+{
+  "pack": "shattermancer_spell_icons_hexweaver_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Hexweaver",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "Shadow-paid cursecraft uses near-black into restrained violet.",
+    "Blight and Effigy are nature-paid and use deep medicinal green into muted antique gold.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_doom_mark.png",
+      "relative_path": "spell_icons/icon_spell_doom_mark.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "36247bc881a022fe2ff21e1f9911395d579f25877d3f9af41eec96236796eb37",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Doom Mark; paid in shadow. A deliberate curse brand worsens every Resist made this turn."
+    },
+    {
+      "filename": "icon_spell_hex.png",
+      "relative_path": "spell_icons/icon_spell_hex.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5d8581c62de96006c5a4c04f5e789cb2c00c14445f2ebe16e940358ec79c8016",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Hex; paid in shadow. A tightly bound curse lays a heavy stockpile of ongoing malice."
+    },
+    {
+      "filename": "icon_spell_blight.png",
+      "relative_path": "spell_icons/icon_spell_blight.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1e41ebfca0c19ef5c31b1a2248ba820619a21dd0f7f24e74c6768f78a9b1c9a9",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Blight; paid in nature. Diseased growth doubles the Curse already carried by the creature."
+    },
+    {
+      "filename": "icon_spell_rupture.png",
+      "relative_path": "spell_icons/icon_spell_rupture.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9fdd2a9259952dc4b5d7809cf05734b27ade3753d09514190b7deb082ce33d6f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Rupture; paid in shadow. The accumulated Curse is consumed in one immediate violent release."
+    },
+    {
+      "filename": "icon_spell_evil_eye.png",
+      "relative_path": "spell_icons/icon_spell_evil_eye.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "79b10f7fe996179899fc2448d00f86c0b896a623bef7934633d6f313fc377fe9",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Evil Eye; paid in shadow. A marked position turns Resist into Curse or Fracture into early Rupture."
+    },
+    {
+      "filename": "icon_spell_effigy.png",
+      "relative_path": "spell_icons/icon_spell_effigy.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "cdaa3bd68ae304125e2681b32084f62e7b14dfe935e4ac81c7ed0b1ad6a56131",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Effigy; paid in nature. A bound ritual effigy redirects half of each blow that lands on the wright."
+    },
+    {
+      "filename": "icon_spell_ill_omen.png",
+      "relative_path": "spell_icons/icon_spell_ill_omen.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dd4d118efc75d115cdc0db038f715dc0186318eb38da02bcf983f878c3181f8f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Ill Omen; paid in shadow. A deliberate omen makes the next Resist curdle threefold."
+    },
+    {
+      "filename": "icon_spell_withering_gaze.png",
+      "relative_path": "spell_icons/icon_spell_withering_gaze.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f327ab170df95951c64cb23853c0b8eaf97b2133405deee9c14fad4dd929783d",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Withering Gaze; paid in shadow. Curse waits behind a restrained gaze and releases in full on the creature's next action."
+    },
+    {
+      "filename": "icon_spell_scryed_ruin.png",
+      "relative_path": "spell_icons/icon_spell_scryed_ruin.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4b78679aa135bf7a9e1ed57cfc90cbf8d363303e4e14ae29060d0846f0fb0e50",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Scryed Ruin; paid in shadow. A broken scrying mirror reveals whether one placed rune would Resist."
+    },
+    {
+      "filename": "icon_spell_tithe_of_woe.png",
+      "relative_path": "spell_icons/icon_spell_tithe_of_woe.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5b062a8a9b5035094b875725d8555245bdeb0c54ec75abf062eda859cdf60c80",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Hexweaver spell icon for Tithe of Woe; paid in shadow. A portion of Curse is exchanged for Shadow power."
+    },
+    {
+      "filename": "hexweaver_spell_icons_preview.png",
+      "relative_path": "previews/hexweaver_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "9c2ccaf985e79db8e6cdb25e507ee52842d4080f64e99b38b9db68fdedf1afbc",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, element labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

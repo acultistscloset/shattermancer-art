@@ -1,0 +1,137 @@
+{
+  "pack": "shattermancer_spell_icons_warlock_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Warlock",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "Every spell is paid in shadow and uses near-black violet as its dominant palette.",
+    "Restrained dried-crimson cues identify health prices or effects powered by previously sacrificed health.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_dark_bargain.png",
+      "relative_path": "spell_icons/icon_spell_dark_bargain.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c1b4741ab991797a09fccc20af2571a31ab698c07b8b4f7b02193f99056f4ecc",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Dark Bargain; paid in shadow. A blood price offered to a void that reveals one hidden position."
+    },
+    {
+      "filename": "icon_spell_wither.png",
+      "relative_path": "spell_icons/icon_spell_wither.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "94e12b2961f6fac8c3ef6984061da264ea9ec5965c25f1717299030fda02774d",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Wither; paid in shadow. A paid-in-health decay strips the creature's wards and turns them into damage."
+    },
+    {
+      "filename": "icon_spell_raise_thrall.png",
+      "relative_path": "spell_icons/icon_spell_raise_thrall.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "82fe0208db85ed5dee99e51c5aff7bd01e240dab7a9fcce526d866438fd0287a",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Raise Thrall; paid in shadow. A blood-bound thrall repeats the previous incantation at reduced force."
+    },
+    {
+      "filename": "icon_spell_carrion_debt.png",
+      "relative_path": "spell_icons/icon_spell_carrion_debt.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "114af219d4aaab64c33ad2baedac3adcaa388e2890a8be2d2f1ba46656edb93f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Carrion Debt; paid in shadow. A health debt drives the Warlock's heaviest immediate strike."
+    },
+    {
+      "filename": "icon_spell_exsanguinate.png",
+      "relative_path": "spell_icons/icon_spell_exsanguinate.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "06b773c70bc4f936e38f7c4912c05a4e5453b687a1ede47d7091136cb14f3740",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Exsanguinate; paid in shadow. Previously sacrificed health is drawn into a powerful shadow attack."
+    },
+    {
+      "filename": "icon_spell_rotting_touch.png",
+      "relative_path": "spell_icons/icon_spell_rotting_touch.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "103704779ef14e5baedf4f71a14b1872681d465d18148cb547a12df14e29bf9d",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Rotting Touch; paid in shadow. A skeletal touch deals damage and repeatedly decays every ward."
+    },
+    {
+      "filename": "icon_spell_life_tap.png",
+      "relative_path": "spell_icons/icon_spell_life_tap.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b2dfe36459b63903c4a6c02582d64e65cd62b1e10024eede0b5c2fd39450c60e",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Life Tap; paid in shadow. Shadow is siphoned directly from the caster's own blood."
+    },
+    {
+      "filename": "icon_spell_grave_bolt.png",
+      "relative_path": "spell_icons/icon_spell_grave_bolt.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "ce7c0d829eec564336ed053e9ad1180f2a5068dd94bd0d1cd5f34e7b3d9cf3e9",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Grave Bolt; paid in shadow. A direct bone-cored projectile of Shadow."
+    },
+    {
+      "filename": "icon_spell_gravecall.png",
+      "relative_path": "spell_icons/icon_spell_gravecall.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a0349ef3fa13da3469aa23f398c44176da906aad25431ad5bc904d10b97abbc5",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Gravecall; paid in shadow. The dead answer past health sacrifice and reveal hidden runes."
+    },
+    {
+      "filename": "icon_spell_hemorrhage.png",
+      "relative_path": "spell_icons/icon_spell_hemorrhage.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "82c4384fa0afc915271b0ad2b25abdc977921e7d61e4dcb87fa608fb6efe7ff6",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Warlock spell icon for Hemorrhage; paid in shadow. An unclosing wound makes every later health sacrifice harm the creature."
+    },
+    {
+      "filename": "warlock_spell_icons_preview.png",
+      "relative_path": "previews/warlock_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "8d7391e8e4acbacd238499c335b45a2b1ac2900b441c2144eef529feabe79657",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, shadow labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

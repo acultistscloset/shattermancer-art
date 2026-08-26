@@ -1,0 +1,138 @@
+{
+  "pack": "shattermancer_spell_icons_alchemist_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Alchemist",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "Water-paid spells use deep blue into cyan and depict visibly wet liquid, never ice or crystal.",
+    "Gold is a special payment palette for Aurel-priced spells and is not added to the six element ids.",
+    "Aurel-paid spells use abraded brass and amber rather than luminous yellow.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_distil.png",
+      "relative_path": "spell_icons/icon_spell_distil.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "770bfe75e75efb9dd663fa1eae165a4d2abe3d7f26b4fc4135251e8f6b469834",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Distil; paid in water. A wet alchemical apparatus converts mana into Aurels."
+    },
+    {
+      "filename": "icon_spell_gold_shard.png",
+      "relative_path": "spell_icons/icon_spell_gold_shard.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "af92678e9bdd5479c29f22846778df92d87ec4897fc8e03bb607a4189238753f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Gold Shard; paid in gold. A fused metal shard turns the wright's held Aurels into a direct weapon."
+    },
+    {
+      "filename": "icon_spell_midas_touch.png",
+      "relative_path": "spell_icons/icon_spell_midas_touch.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1049dca6ed3da9b794e21cb81dc111f8377a6ae421bcd52a20c308713578b999",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Midas Touch; paid in gold. A transmuting touch makes held wealth determine the damage dealt."
+    },
+    {
+      "filename": "icon_spell_philosophers_stone.png",
+      "relative_path": "spell_icons/icon_spell_philosophers_stone.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e769b46689cb91fd24a6ee8de1ae348fd51fd9684e9761a09767fc0f169af14f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Philosopher's Stone; paid in gold. The legendary stone makes every Fracture yield doubled Aurels."
+    },
+    {
+      "filename": "icon_spell_debasement.png",
+      "relative_path": "spell_icons/icon_spell_debasement.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "328cde0f59fe5f3dc073ff4fb5add4daaaf358e2b087745606ec993d664289e4",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Debasement; paid in water. A wet alchemical vortex strips wards and renders their levels into Aurels."
+    },
+    {
+      "filename": "icon_spell_transmute.png",
+      "relative_path": "spell_icons/icon_spell_transmute.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "0e2964979cd97bfc5669e4d42f80a87a560c94258f35a3df163555db0a97a264",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Transmute; paid in water. A wet converter changes mana from the fullest pool into a chosen element with some loss."
+    },
+    {
+      "filename": "icon_spell_assay.png",
+      "relative_path": "spell_icons/icon_spell_assay.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c652302d63429d5d09895ac5f533dfef2df85fcbd91ae8693fdff69f50576baf",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Assay; paid in gold. A precise paid examination reveals the exact rune in one position."
+    },
+    {
+      "filename": "icon_spell_leaden_weight.png",
+      "relative_path": "spell_icons/icon_spell_leaden_weight.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5fbc10a421cc8babcf4fbcade3379d540a3b2e2df1c04ca0b3c09f29cef5ce35",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Leaden Weight; paid in gold. A purchased moment halves the next blow and prevents a ward from rising."
+    },
+    {
+      "filename": "icon_spell_quintessence.png",
+      "relative_path": "spell_icons/icon_spell_quintessence.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "791bae3432fc22e0811bd49f65d1a4fa98ca0fd9894caa6d96d97c468119e533",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Quintessence; paid in water. Wet alchemical essence converts held Aurels into health."
+    },
+    {
+      "filename": "icon_spell_vitriol_ward.png",
+      "relative_path": "spell_icons/icon_spell_vitriol_ward.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3e2eddfec1fe33ad890248081a9333848934ac0256574e19e400089d3cb378b2",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Alchemist spell icon for Vitriol Ward; paid in water. A liquid defensive crest grants Block according to held Aurels."
+    },
+    {
+      "filename": "alchemist_spell_icons_preview.png",
+      "relative_path": "previews/alchemist_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "6c0a135023ca74aeb11297ddb23a5e8d3a1d4717fc98f276c83d46252263d3f0",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, payment-palette labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

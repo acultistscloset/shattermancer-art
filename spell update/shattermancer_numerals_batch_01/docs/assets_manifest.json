@@ -1,0 +1,194 @@
+{
+  "pack": "shattermancer_numerals_batch_01",
+  "version": "1.0.0-review",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "metric_notes": [
+    "All sixteen files use the same 512 by 512 canvas.",
+    "Digits share one baseline, cap height, horizontal advance, and vertical placement.",
+    "Glyphs are pure white and intended to be tinted at runtime.",
+    "This uniform set-canvas treatment is the explicit exception to per-subject trimming."
+  ],
+  "assets": [
+    {
+      "filename": "num_0.png",
+      "relative_path": "numerals/num_0.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "fef2921fc6bad810dc90cb35b56560651855cc84cfd6f4115ce24c7257fa608a",
+      "repeat_count": 1,
+      "baked_text": "0",
+      "role": "White runtime-tintable numeral glyph 0; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_1.png",
+      "relative_path": "numerals/num_1.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "53e399db266d9ca1f4f88e03ae8c87cdb73e6e2edf27cae64181e5e88d965a12",
+      "repeat_count": 1,
+      "baked_text": "1",
+      "role": "White runtime-tintable numeral glyph 1; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_2.png",
+      "relative_path": "numerals/num_2.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "754af157eecef9e4a66138e8ececec866ae98b41ae17c5d8a208d72e2699da68",
+      "repeat_count": 1,
+      "baked_text": "2",
+      "role": "White runtime-tintable numeral glyph 2; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_3.png",
+      "relative_path": "numerals/num_3.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "50734217f79ae4b375583eaeb53e352c02cc537ef6a466cfd1d4f6a62c93b452",
+      "repeat_count": 1,
+      "baked_text": "3",
+      "role": "White runtime-tintable numeral glyph 3; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_4.png",
+      "relative_path": "numerals/num_4.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5f3db28e52b72400bf68de4fb802bda2b3c666aded7ad9e70e5af562a18eea59",
+      "repeat_count": 1,
+      "baked_text": "4",
+      "role": "White runtime-tintable numeral glyph 4; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_5.png",
+      "relative_path": "numerals/num_5.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "00d637095fc363b1d047ffc28fca3b741334bc7dfcf12828074c149c148196d2",
+      "repeat_count": 1,
+      "baked_text": "5",
+      "role": "White runtime-tintable numeral glyph 5; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_6.png",
+      "relative_path": "numerals/num_6.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "11046a0d6c510d230f5480aade41408eac41293fe322b3f1e17e07bae79e07e8",
+      "repeat_count": 1,
+      "baked_text": "6",
+      "role": "White runtime-tintable numeral glyph 6; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_7.png",
+      "relative_path": "numerals/num_7.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4904c4e6b19991ef6b8e5fad820e415bde655803dfcf74d42b072c5e1a7e01e6",
+      "repeat_count": 1,
+      "baked_text": "7",
+      "role": "White runtime-tintable numeral glyph 7; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_8.png",
+      "relative_path": "numerals/num_8.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e5b7157bf01dc7daa9272fa2d53dda86d5a1437feace0cecef178f5afc8f72fd",
+      "repeat_count": 1,
+      "baked_text": "8",
+      "role": "White runtime-tintable numeral glyph 8; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_9.png",
+      "relative_path": "numerals/num_9.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "63ab0beb07d17c6b31f44a93ab31b049ed5d00112748f1dc4dcb7548435a9831",
+      "repeat_count": 1,
+      "baked_text": "9",
+      "role": "White runtime-tintable numeral glyph 9; shared tabular canvas and baseline."
+    },
+    {
+      "filename": "num_aurel.png",
+      "relative_path": "numerals/num_aurel.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9f42d76c21b4c98948795e3beaecea379fbae66f215ec55de9bac171159b2fc6",
+      "repeat_count": 1,
+      "baked_text": "Aurel mark",
+      "role": "White runtime-tintable Aurel currency mark."
+    },
+    {
+      "filename": "num_health.png",
+      "relative_path": "numerals/num_health.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e314aa3d45cf0aa09ace5281624252f4608a58f8247b507c9d01e60f628117ae",
+      "repeat_count": 1,
+      "baked_text": "health mark",
+      "role": "White runtime-tintable health-cost mark."
+    },
+    {
+      "filename": "num_minus.png",
+      "relative_path": "numerals/num_minus.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "f53d2d756934b76e65966cb59170b8fe1a77a8092121fe672d9eb2fcb7f560eb",
+      "repeat_count": 1,
+      "baked_text": "-",
+      "role": "White runtime-tintable negative-modifier mark."
+    },
+    {
+      "filename": "num_plus.png",
+      "relative_path": "numerals/num_plus.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8fc8069b01298721e143086a12845381125137dba94819b4a8882804af095100",
+      "repeat_count": 1,
+      "baked_text": "+",
+      "role": "White runtime-tintable positive-modifier mark."
+    },
+    {
+      "filename": "num_slash.png",
+      "relative_path": "numerals/num_slash.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "dd9b5900ffe07cf32528411eb2814bedb2e93835f71d6fd176a9e3a6c6d7ca03",
+      "repeat_count": 1,
+      "baked_text": "/",
+      "role": "White runtime-tintable divider mark for current and maximum values."
+    },
+    {
+      "filename": "num_substitute.png",
+      "relative_path": "numerals/num_substitute.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "318e3bdca7e898997b604f8604b47825acba700b8a17df08de8d43af7fb314a8",
+      "repeat_count": 1,
+      "baked_text": "substitute-mana mark",
+      "role": "White runtime-tintable substitute-mana mark."
+    },
+    {
+      "filename": "numerals_implementation_preview.png",
+      "relative_path": "previews/numerals_implementation_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "17459816b4d13ddb301a94f8e79378d5283e732ba2bc265ff12aa497f02c62a1",
+      "repeat_count": 1,
+      "baked_text": "review labels and example cost values",
+      "role": "Full-screen review preview showing enlarged glyphs and approximate phone-scale cost placement."
+    }
+  ]
+}

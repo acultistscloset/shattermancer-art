@@ -1,0 +1,137 @@
+{
+  "pack": "shattermancer_spell_icons_cryomancer_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Cryomancer",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the 512 px canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; all silhouettes are also inspected at 40 px for smaller uses.",
+    "Symmetry Ward and Thaw use the water palette and visibly liquid forms because their paid-in element overrides the discipline palette.",
+    "Ice is rendered as frozen water, snow, and hail rather than as blue gemstone material.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_overcharge.png",
+      "relative_path": "spell_icons/icon_spell_overcharge.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8ccf48a509feaad56c5ea07fd3d2f10770a65398f4f674977b54a55bd22fba17",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Overcharge; paid in ice. A frozen hourglass abruptly arrests the creature's next action."
+    },
+    {
+      "filename": "icon_spell_frost_armor.png",
+      "relative_path": "spell_icons/icon_spell_frost_armor.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "46d9c9b00c424aedf38a56f3469d4d73571ac766e63e48633ac7f1b1dab0412c",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Frost Armor; paid in ice. Layered frozen-water armour grants Block, retaliates when breached, and partly persists."
+    },
+    {
+      "filename": "icon_spell_freeze.png",
+      "relative_path": "spell_icons/icon_spell_freeze.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "8ccc389b64e412e0c26e2560288585c1774229638946bec57b44810c0487f957",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Freeze; paid in ice. A resistance-knot is frozen open so the next incantation grants no Resistance."
+    },
+    {
+      "filename": "icon_spell_symmetry_ward.png",
+      "relative_path": "spell_icons/icon_spell_symmetry_ward.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "51859146220f6d3de216ee61d91add29cdfd6f5806485f373a21cca5dcee9409",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Symmetry Ward; paid in water. Opposing liquid currents form a ward strengthened by elemental diversity."
+    },
+    {
+      "filename": "icon_spell_glacial_prison.png",
+      "relative_path": "spell_icons/icon_spell_glacial_prison.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "1ea6a58dfbdb26ad0edf76819404c9e5cbbcd444ae70df25fabd2327b44e0049",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Glacial Prison; paid in ice. Crossing ice ribs imprison one position and turn the hold into attack and protection."
+    },
+    {
+      "filename": "icon_spell_cone_of_cold.png",
+      "relative_path": "spell_icons/icon_spell_cone_of_cold.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "40b411db2871d6df2f4084312fc60fe65e77c8a39a9dff97ac3834da92abb0a1",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Cone of Cold; paid in ice. A directional freezing blast delays the next action and bites when it finally moves."
+    },
+    {
+      "filename": "icon_spell_whiteout.png",
+      "relative_path": "spell_icons/icon_spell_whiteout.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "334fe45c776ec02ec0b7e05602f365ce751499150a3ca1e7239db05631ccafaf",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Whiteout; paid in ice. A dense storm erases a shield, preventing wards from being raised."
+    },
+    {
+      "filename": "icon_spell_thaw.png",
+      "relative_path": "spell_icons/icon_spell_thaw.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "2af174a6166306384523e4a48532cca694b5c6314d725ad6e6480373a530491d",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Thaw; paid in water. Melting armour becomes visibly liquid water and usable elemental power."
+    },
+    {
+      "filename": "icon_spell_hailstorm.png",
+      "relative_path": "spell_icons/icon_spell_hailstorm.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "51b8a0d8ad7f1e00a210898ab15f6560634f2c8b3c92b993e047d954e14187bf",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Hailstorm; paid in ice. A consolidated barrage of rounded hail converts existing holds into repeated damage."
+    },
+    {
+      "filename": "icon_spell_permafrost.png",
+      "relative_path": "spell_icons/icon_spell_permafrost.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "b14fd589ebe5d036e9d2de2ac86bef901d94c4ed5f24cebf505d2b7ad3d37520",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Cryomancer spell icon for Permafrost; paid in ice. Ancient frozen ground pins a shield and caps the creature's wards at one level."
+    },
+    {
+      "filename": "cryomancer_spell_icons_preview.png",
+      "relative_path": "previews/cryomancer_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "e9d04ffe02b73391aa8674cccdcf073b5a67238d9fdd13548a5f498c8b01e2ed",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, element labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

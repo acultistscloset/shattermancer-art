@@ -1,0 +1,2 @@
+updates/hexweaver/icon_spell_rupture.png replaces shattermancer_spell_icons_hexweaver_batch_01/spell_icons/icon_spell_rupture.png
+updates/alchemist/icon_spell_gold_shard.png replaces shattermancer_spell_icons_alchemist_batch_01/spell_icons/icon_spell_gold_shard.png

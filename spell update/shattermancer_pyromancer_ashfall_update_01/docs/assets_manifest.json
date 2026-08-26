@@ -1,0 +1,40 @@
+{
+  "pack": "shattermancer_pyromancer_ashfall_update_01",
+  "version": "1.0.1-review",
+  "discipline": "Pyromancer",
+  "update_for": "shattermancer_spell_icons_pyromancer_batch_01",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "assets": [
+    {
+      "filename": "icon_spell_ashfall.png",
+      "relative_path": "updates/icon_spell_ashfall.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "4f037387d7330cf83414f0ad87db58d24216e744cd1cbf0a9a3a1a4e648c4c8c",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Replacement Pyromancer spell icon for Ashfall; paid in fire. A wind-driven fall of soot and cooling ash representing persistent stacking damage after enemy turns."
+    },
+    {
+      "filename": "ashfall_update_preview.png",
+      "relative_path": "previews/ashfall_update_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "c395ef554b0d22a7e6c6b6db47c3fd6fafb55b20d89e6ce29c0cb0ea86cec4ea",
+      "repeat_count": 1,
+      "baked_text": "review title, design annotations, field labels, and scale annotation",
+      "role": "Full-screen review preview showing the replacement Ashfall art and approximate phone-scale readability; placement is illustrative."
+    }
+  ]
+}

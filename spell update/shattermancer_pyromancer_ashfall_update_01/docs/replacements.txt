@@ -1,0 +1,1 @@
+updates/icon_spell_ashfall.png replaces spell_icons/icon_spell_ashfall.png from shattermancer_spell_icons_pyromancer_batch_01.

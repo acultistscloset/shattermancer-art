@@ -1,0 +1,138 @@
+{
+  "pack": "shattermancer_spell_icons_diviner_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "Diviner",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "Water-paid spells use deep blue into cyan and depict visibly wet liquid, never ice or crystal.",
+    "Lightning-paid spells use muted gold-yellow into white with localized illumination.",
+    "Information spells use distinct basin, current, tool, tablet, eye, scroll, hourglass, convergence, needle, and astrolabe silhouettes.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_scrying_pool.png",
+      "relative_path": "spell_icons/icon_spell_scrying_pool.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "87ec8c5e8627e6926c9c5007e27087296274a0be474ef8043ca91c45e2b7e480",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Scrying Pool; paid in water. A visibly wet divination basin tests whether one placed rune would Fracture."
+    },
+    {
+      "filename": "icon_spell_flow.png",
+      "relative_path": "spell_icons/icon_spell_flow.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bf7ae4eecfd619d258190038f2f1156500bc0925596224e7355753921e5a6223",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Flow; paid in water. Two wet currents exchange position around dark stones, recalling the last incantation with two slots swapped."
+    },
+    {
+      "filename": "icon_spell_spark.png",
+      "relative_path": "spell_icons/icon_spell_spark.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "01b1dd255fe83992d46b90bf00f6a93733b7380e400e9cf42f68eb237c5f9598",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Spark; paid in lightning. A brass divining fork catches one compact spark to test whether a named element appears."
+    },
+    {
+      "filename": "icon_spell_revelation_cascade.png",
+      "relative_path": "spell_icons/icon_spell_revelation_cascade.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3070d5ea88386d245e27886f701afaee700f957371869bdf6b7a1654bbf30d4b",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Revelation Cascade; paid in lightning. A branching revelation strike opens two blank divination tablets at once."
+    },
+    {
+      "filename": "icon_spell_foresight.png",
+      "relative_path": "spell_icons/icon_spell_foresight.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "df53aaa211e32e4abba85757e767eae468ec9d6372367aae708464ee32fd17f7",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Foresight; paid in lightning. An antique seer's eye is pierced by a single revelation ray to expose one exact position."
+    },
+    {
+      "filename": "icon_spell_prophecy.png",
+      "relative_path": "spell_icons/icon_spell_prophecy.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "43d75c832d7d7f0d887f89791d97efdd5cb33708b53cc2928c4d770a92367940",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Prophecy; paid in lightning. A dark omen scroll holds three unreadable wax impressions beneath branching revelation light."
+    },
+    {
+      "filename": "icon_spell_sands_of_time.png",
+      "relative_path": "spell_icons/icon_spell_sands_of_time.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "26aab817a0d9331f301134ddca8d032cb4efc81703691070698703894f05c36b",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Sands of Time; paid in water. Visibly wet water climbs backward through a battered hourglass, undoing the last incantation's raised wards."
+    },
+    {
+      "filename": "icon_spell_convergence.png",
+      "relative_path": "spell_icons/icon_spell_convergence.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "c911a5f8d124cfc00c16cc45fd9451563dc0fdbc1177c50c886a988a4aa0c121",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Convergence; paid in water. Four learned currents converge into one short water lance, turning revealed knowledge into force."
+    },
+    {
+      "filename": "icon_spell_certainty.png",
+      "relative_path": "spell_icons/icon_spell_certainty.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "e78bdfddbd16b8c60e849d4edfc2660f30673eafbf1f7f69c668fd4f4e293e92",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Certainty; paid in water. A divining plumb needle fixes one wet droplet at the exact centre of a broad ripple."
+    },
+    {
+      "filename": "icon_spell_fate_sealed.png",
+      "relative_path": "spell_icons/icon_spell_fate_sealed.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "3d91a0cdfcc5dffb6f48ca9baa3fa315b620d64a817c4aaf18f4663529d2bd2f",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Diviner spell icon for Fate Sealed; paid in lightning. Misaligned astrolabe rings are fixed by one heavy clasp and a restrained revelation strike."
+    },
+    {
+      "filename": "diviner_spell_icons_preview.png",
+      "relative_path": "previews/diviner_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "5618fc2fb223c7b6b3bde41850b5defac1550f03d5e1f993445dcc17ad0f27d6",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, payment-palette labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}

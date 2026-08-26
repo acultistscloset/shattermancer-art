@@ -1,0 +1,119 @@
+{
+  "pack": "shattermancer_spell_icons_shared_pool_batch_01",
+  "version": "1.0.0-review",
+  "discipline": "shared_pool",
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "reference_screen_points": {
+    "width": 440,
+    "height": 956
+  },
+  "production_notes": [
+    "Production icons contain artwork only; spell names and costs are not baked into them.",
+    "Painted subjects occupy 90.6% of the canvas on their longest dimension, within the approved 88\u201392% range.",
+    "Battle-rack intent is approximately 60\u201368 px; every silhouette is also inspected at 40 px.",
+    "The shared pool preserves the payment palette of each spell rather than using one discipline palette.",
+    "The gold treatment is a special Aurel-payment palette and is not added to the six element ids.",
+    "Corrosive Flask is paid in ice and is identified by a clear snowflake-shaped breach.",
+    "Blood-priced spells retain a restrained crimson cost cue within the shadow palette.",
+    "Lighting is consistently motivated from the upper-left."
+  ],
+  "assets": [
+    {
+      "filename": "icon_spell_base_metal.png",
+      "relative_path": "spell_icons/icon_spell_base_metal.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "9bffeedaa2e277c8a050cf01b2cfd80f77bc2daff1b3d82688a4c0a41b8a9738",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Base Metal; paid in gold. Blank battered Aurels melt into a vial, spending currency to brew a random vial."
+    },
+    {
+      "filename": "icon_spell_bloom.png",
+      "relative_path": "spell_icons/icon_spell_bloom.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "25193a2567d8b27f6ae7fffbaa7f59fa7b24b1d02a80e680d6f8e08958cd72aa",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Bloom; paid in nature. One seed source produces doubled growth, recalling doubled mana from Resonates."
+    },
+    {
+      "filename": "icon_spell_charnel_pact.png",
+      "relative_path": "spell_icons/icon_spell_charnel_pact.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bbeffc04b3b29366c7e5ee86b137c78b8a76b0c87be60ee28f483fc4b25d8141",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Charnel Pact; paid in shadow. A living hand and skeletal hand seal a blood-priced exchange for Shadow."
+    },
+    {
+      "filename": "icon_spell_corrosive.png",
+      "relative_path": "spell_icons/icon_spell_corrosive.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "d9db3ff25b4cea723f37279a23467ed6521ab2b48e4ff0eb39f49f57f597dfbf",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Corrosive Flask; paid in ice. An ice-paid caustic flask eats a snowflake-shaped breach through a ward shield."
+    },
+    {
+      "filename": "icon_spell_corruption.png",
+      "relative_path": "spell_icons/icon_spell_corruption.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "bbb70bbfd9ff026ed92e9d78204bf882e86f3e1426453e13f80223f1d0d11fd4",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Corruption; paid in shadow. Shadow rot consumes one blank ward shield, reducing a chosen Resistance to nothing."
+    },
+    {
+      "filename": "icon_spell_malediction.png",
+      "relative_path": "spell_icons/icon_spell_malediction.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "5fe41d25b95001c51eb8072cad90cbc63b54689c9011e798180facf4c53cf0e3",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Malediction; paid in shadow. One forked curse hook infects two blank result stones, making both outcomes lay Curse."
+    },
+    {
+      "filename": "icon_spell_regrowth.png",
+      "relative_path": "spell_icons/icon_spell_regrowth.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "df4f309fe802eaf603511cc9fdbed95a2ecebd22fc7e0270576dc595ab96fbad",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Regrowth; paid in nature. Healthy new growth tears out of dead wood to restore health."
+    },
+    {
+      "filename": "icon_spell_second_death.png",
+      "relative_path": "spell_icons/icon_spell_second_death.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a33d5b9b49b63f7da3eac897fa55d1691804f818cb1da3aa0bbe58f39c5ddf12",
+      "repeat_count": 1,
+      "baked_text": [],
+      "role": "Shared-pool spell icon for Second Death; paid in shadow. A returning blood ribbon loops into a slain skull, repaying health spent if the blow finishes the creature."
+    },
+    {
+      "filename": "shared_pool_spell_icons_preview.png",
+      "relative_path": "previews/shared_pool_spell_icons_preview.png",
+      "width": 880,
+      "height": 1912,
+      "sha256": "640aa30d9eb619ef17ab5da35c9dab2b13e144179b52893f05d20226e8746fd0",
+      "repeat_count": 1,
+      "baked_text": "review title, spell names, payment-palette labels, and scale annotations",
+      "role": "Full-screen review preview; production pieces are roughly placed for intent and phone-scale inspection."
+    }
+  ]
+}
