@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "file": "fx/fx_travel_bolt.png",
+  "mode": "RGBA",
+  "straight_alpha": true,
+  "sheet_dimensions": [
+    1024,
+    512
+  ],
+  "cell_dimensions": [
+    256,
+    256
+  ],
+  "grid": [
+    4,
+    2
+  ],
+  "frames": 8,
+  "fps": 24,
+  "loop": true,
+  "display_size": [
+    120,
+    120
+  ],
+  "pivot_per_cell": [
+    128,
+    128
+  ],
+  "source_axis": "+X",
+  "source_motion": "left-to-right",
+  "leading_knot_side": "right",
+  "baked_trail_side": "left",
+  "runtime_rotation_degrees": -30,
+  "mirror": false,
+  "alpha_levels": 256,
+  "frame_metrics": [
+    {
+      "alpha_bbox": [
+        10,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 10,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        12,
+        99,
+        160,
+        159
+      ],
+      "minimum_edge_clearance": 12,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        18,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 18,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        24,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 24,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        27,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 27,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        24,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 24,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        18,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 18,
+      "anchor": [
+        128,
+        128
+      ]
+    },
+    {
+      "alpha_bbox": [
+        12,
+        99,
+        160,
+        158
+      ],
+      "minimum_edge_clearance": 12,
+      "anchor": [
+        128,
+        128
+      ]
+    }
+  ],
+  "neighbor_alpha_differences": [
+    0.004862,
+    0.006272,
+    0.006015,
+    0.005516,
+    0.005145,
+    0.006048,
+    0.005107,
+    0.004545
+  ],
+  "frame_8_to_1_alpha_difference": 0.004545,
+  "seam_is_not_worst_transition": true,
+  "sha256": "4d153100c9919f1b5cd0fce95bb342b0dcb35b91086dea719d4031636b54cd92"
+}

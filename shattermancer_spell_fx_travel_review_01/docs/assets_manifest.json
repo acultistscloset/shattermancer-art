@@ -1,0 +1,85 @@
+{
+  "package": "Shattermancer Spell FX Travel Review 01",
+  "status": "review_gate",
+  "production_asset_count": 1,
+  "assets": [
+    {
+      "path": "fx/fx_travel_bolt.png",
+      "type": "production_sprite_sheet",
+      "dimensions": [
+        1024,
+        512
+      ],
+      "frames": 8,
+      "grid": [
+        4,
+        2
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "display_size": [
+        120,
+        120
+      ],
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "source_axis": "+X",
+      "source_motion": "left-to-right",
+      "leading_knot_side": "right",
+      "baked_trail_side": "left",
+      "runtime_rotation_degrees": -30,
+      "runtime_destination": "diagonally up-right",
+      "mirror": false,
+      "tint": "dominant incantation element",
+      "alpha": "straight RGBA",
+      "baked_lettering": [],
+      "sha256": "4d153100c9919f1b5cd0fce95bb342b0dcb35b91086dea719d4031636b54cd92"
+    },
+    {
+      "path": "previews/travel_contact_sheet.png",
+      "type": "review_preview",
+      "sha256": "4116a6895c9dfa0f42f8d2e48f1ea16885c89f519e8fc0b1c1d98faca52ff7d0"
+    },
+    {
+      "path": "previews/travel_loop.gif",
+      "type": "review_preview",
+      "sha256": "16e05b8b599421ef026ea76b29982323c0a07bb42a6c78ef589db564ca494a0f"
+    },
+    {
+      "path": "previews/travel_orientation.png",
+      "type": "review_preview",
+      "sha256": "69b8ea34e1804456fe7fb0faf711a272ffc8c076b7c5f7fa905037179b27b8c6"
+    },
+    {
+      "path": "00_READ_ME_FIRST.md",
+      "type": "documentation",
+      "sha256": "79a40b988795cc66c9ba75b263f3b0a5f81d2938be352ee66632d6fbb822ffe2"
+    },
+    {
+      "path": "docs/generation_prompts.md",
+      "type": "documentation",
+      "sha256": "75811082c6b05c6f6edcf75ef95d963749c983e25e57fdddb82fedd1f4892d29"
+    },
+    {
+      "path": "docs/placement_notes.md",
+      "type": "documentation",
+      "sha256": "d07905f2ee099ef227df7ed98309819163607f3b3863b699454b579bb25f2185"
+    },
+    {
+      "path": "docs/review_notes.md",
+      "type": "documentation",
+      "sha256": "2a9855596ee6cb38f113aafd440b3ebf5bff127537fc4442dc6524779628724b"
+    },
+    {
+      "path": "docs/validation_report.json",
+      "type": "documentation",
+      "sha256": "334ca5800a48085bed9d3ee2bcba298b363a83ec8318250ea5e72ad53117b441"
+    }
+  ]
+}
