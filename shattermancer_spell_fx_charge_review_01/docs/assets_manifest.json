@@ -1,0 +1,266 @@
+{
+  "package": "Shattermancer Spell FX Charge Review 01",
+  "status": "review_gate",
+  "production_asset_count": 6,
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "assets": [
+    {
+      "path": "fx/fx_charge_fire.png",
+      "type": "production_sprite_sheet",
+      "element_id": "fire",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "97b2c31a499ad1538265bfe01ee134bfaada8750446580dd4b237a80b077f124",
+      "baked_lettering": []
+    },
+    {
+      "path": "fx/fx_charge_water.png",
+      "type": "production_sprite_sheet",
+      "element_id": "water",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "6c23f53b141e9414478b6734adf8cc3cda97203b69d5c0a70cad5b3fa6c6b19a",
+      "baked_lettering": []
+    },
+    {
+      "path": "fx/fx_charge_nature.png",
+      "type": "production_sprite_sheet",
+      "element_id": "nature",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "86c04458e71ffe4b97a6296a416b14d01893d1d61ac512c242b1e3f20adf0c61",
+      "baked_lettering": []
+    },
+    {
+      "path": "fx/fx_charge_lightning.png",
+      "type": "production_sprite_sheet",
+      "element_id": "lightning",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "ed984d310ab5a5f7c22c1a48539dc543932f17ac84354ff49b29289cf7e6e5c5",
+      "baked_lettering": []
+    },
+    {
+      "path": "fx/fx_charge_ice.png",
+      "type": "production_sprite_sheet",
+      "element_id": "ice",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "31bd3a6e09ffc45d10159ce8bfdcbb87185013dbea367ef41ef19a4b772d0adb",
+      "baked_lettering": []
+    },
+    {
+      "path": "fx/fx_charge_shadow.png",
+      "type": "production_sprite_sheet",
+      "element_id": "shadow",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "cell_dimensions": [
+        256,
+        256
+      ],
+      "grid": [
+        4,
+        3
+      ],
+      "frames": 12,
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "alpha": "straight RGBA",
+      "sha256": "cfc6026496399889f16a6e3f17ae082bbcf8196be7337a8fc66ce5e67f24e51e",
+      "baked_lettering": []
+    },
+    {
+      "path": "previews/charge_all_loops.gif",
+      "type": "review_preview",
+      "sha256": "913c20c91cd083347c75495b8f434278bf56dd3341c00545b0637727c9317d9c"
+    },
+    {
+      "path": "previews/charge_contact_sheet.png",
+      "type": "review_preview",
+      "sha256": "6cb547b43fc7bd5474a1bd3879bf06b508db69f9f2a0ed701faf804e1adfeec8"
+    },
+    {
+      "path": "previews/charge_loop_fire.gif",
+      "type": "review_preview",
+      "sha256": "943895e750e00b357ba6ab9ec36d550aeddfec1efeb04d31485fdc1a1e1aa7d6"
+    },
+    {
+      "path": "previews/charge_loop_ice.gif",
+      "type": "review_preview",
+      "sha256": "9c6bade31744fff85a79db4401dcd6abbebcb6621251d5d44abed944213a64f3"
+    },
+    {
+      "path": "previews/charge_loop_lightning.gif",
+      "type": "review_preview",
+      "sha256": "4d5484fccf7787c4db7093b0833cb3badf08e085b9f0266b22e57a6942be2ca6"
+    },
+    {
+      "path": "previews/charge_loop_nature.gif",
+      "type": "review_preview",
+      "sha256": "da46742f43cd5a356bb948cd3cfe4eca4b3367bf140cf3c10a1013327c5eeb5f"
+    },
+    {
+      "path": "previews/charge_loop_shadow.gif",
+      "type": "review_preview",
+      "sha256": "f5e4e2e3bb24e64ee1bb3cc7128c52bfaa6586d3234c4c0cece6f92687a35898"
+    },
+    {
+      "path": "previews/charge_loop_water.gif",
+      "type": "review_preview",
+      "sha256": "dfbbb3096c2ae3bde9ca5825e5c1e508ac7c6915267d3e72f5805113e9b8c19c"
+    },
+    {
+      "path": "00_READ_ME_FIRST.md",
+      "type": "documentation",
+      "sha256": "036ca2ef0e1e7b859ec04c96671a63e9aebedd0ebaca4dde724284b0880ca3a3"
+    },
+    {
+      "path": "docs/generation_prompts.md",
+      "type": "documentation",
+      "sha256": "98db8dd1e2f7b0ed231ea4884974459330773af063e7dc23c308a6a56714c3d1"
+    },
+    {
+      "path": "docs/placement_notes.md",
+      "type": "documentation",
+      "sha256": "c9d8a8afc5d5110636fdd3f855d4b025adbf87eb855390602523d7c561abe05d"
+    },
+    {
+      "path": "docs/review_notes.md",
+      "type": "documentation",
+      "sha256": "5627f52707b7aac094c2e1046cab6cadf56314e6446dac754cbb433330e28e8d"
+    },
+    {
+      "path": "docs/validation_report.json",
+      "type": "documentation",
+      "sha256": "36557e64cb2c14861acd53f3c8fa85994b26541329a42888fe74c8972967d24d"
+    }
+  ]
+}
