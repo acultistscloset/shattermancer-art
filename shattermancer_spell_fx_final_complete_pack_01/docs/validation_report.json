@@ -1,0 +1,456 @@
+{
+  "status": "PASS",
+  "production_asset_count": 18,
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "checks": [
+    {
+      "filename": "fx_charge_fire.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "97b2c31a499ad1538265bfe01ee134bfaada8750446580dd4b237a80b077f124"
+    },
+    {
+      "filename": "fx_charge_water.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "6c23f53b141e9414478b6734adf8cc3cda97203b69d5c0a70cad5b3fa6c6b19a"
+    },
+    {
+      "filename": "fx_charge_nature.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "86c04458e71ffe4b97a6296a416b14d01893d1d61ac512c242b1e3f20adf0c61"
+    },
+    {
+      "filename": "fx_charge_lightning.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "ed984d310ab5a5f7c22c1a48539dc543932f17ac84354ff49b29289cf7e6e5c5"
+    },
+    {
+      "filename": "fx_charge_ice.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "31bd3a6e09ffc45d10159ce8bfdcbb87185013dbea367ef41ef19a4b772d0adb"
+    },
+    {
+      "filename": "fx_charge_shadow.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "cfc6026496399889f16a6e3f17ae082bbcf8196be7337a8fc66ce5e67f24e51e"
+    },
+    {
+      "filename": "fx_travel_bolt.png",
+      "dimensions": [
+        1024,
+        512
+      ],
+      "mode": "RGBA",
+      "frames": 8,
+      "grid": [
+        4,
+        2
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "all_loop_cells_nonempty": true,
+      "final_frame_empty": null,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "4d153100c9919f1b5cd0fce95bb342b0dcb35b91086dea719d4031636b54cd92"
+    },
+    {
+      "filename": "fx_impact_fire.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "99d1752a231f4f4e1bdb9409d60fae6ba5b543647dd5eb7626d9a21784f00ab4"
+    },
+    {
+      "filename": "fx_impact_water.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "f04924e802546a4a53c6762b7f5fc008a1739ccea06e6810b36ffb8786e1dfad"
+    },
+    {
+      "filename": "fx_impact_nature.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "1bf2f080f8e1d0626d0e40cfc1060e7eaa73e5904d54e18d2cbac98a2c82978a"
+    },
+    {
+      "filename": "fx_impact_lightning.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "e9189799620f5882dadf3c29b0edcff42dae311535f7f99261b69c39d942c4bd"
+    },
+    {
+      "filename": "fx_impact_ice.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "eed0410952b467d8d45fd5e6cfb2052f9e61a6eafcf9d38b65872e62fdf43aa7"
+    },
+    {
+      "filename": "fx_impact_shadow.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "8e1a604d0629ee5cf8ab6a9755e39b7439ab1897925aa76dabdc0c06e159d198"
+    },
+    {
+      "filename": "fx_resonate.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "de03fe030479eaff88b28c81ca7d4abbefe7c2ce7f2ffd14b67de8cb75652a2a"
+    },
+    {
+      "filename": "fx_fizzle.png",
+      "dimensions": [
+        1024,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 12,
+      "grid": [
+        4,
+        3
+      ],
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 220,
+      "approved_source_hash_match": true,
+      "sha256": "78942eba87ae67fd2fb51685de1a1f04af8396951171637e836e99bfa7f7f21d"
+    },
+    {
+      "filename": "fx_shatter.png",
+      "dimensions": [
+        2240,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 14,
+      "grid": [
+        7,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "e57e40ae9099deda4f57e131faf1020e108528b6785d232ce4771193623a7a1f"
+    },
+    {
+      "filename": "fx_shockwave.png",
+      "dimensions": [
+        1920,
+        768
+      ],
+      "mode": "RGBA",
+      "frames": 10,
+      "grid": [
+        5,
+        2
+      ],
+      "cell": [
+        384,
+        384
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "cc6066ae791d8cfa709e041917757b4e1ab9b0bdc04b7c9ed9e29bffc844f5a8"
+    },
+    {
+      "filename": "fx_hitflash.png",
+      "dimensions": [
+        960,
+        640
+      ],
+      "mode": "RGBA",
+      "frames": 6,
+      "grid": [
+        3,
+        2
+      ],
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "all_loop_cells_nonempty": null,
+      "final_frame_empty": true,
+      "alpha_levels": 256,
+      "approved_source_hash_match": true,
+      "sha256": "20f5904c54784152ee3524fb58ee90fadcb6a6cf09d66ecbea9eee8da91c5f91"
+    }
+  ],
+  "set_checks": {
+    "charge_elements_exact": true,
+    "impact_elements_exact": true,
+    "resonate_is_separate_sheet": true,
+    "travel_orientation_declared": true,
+    "charge_contains_no_drawn_staff": "confirmed in approved Charge review",
+    "hitflash_contains_no_creature_silhouette": "confirmed in approved Shared Feedback review",
+    "frames_individually_trimmed": false,
+    "production_baked_text": []
+  }
+}

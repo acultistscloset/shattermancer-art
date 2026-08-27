@@ -1,0 +1,559 @@
+{
+  "package": "Shattermancer Spell FX Final Complete Pack 01",
+  "status": "final_release",
+  "production_asset_count": 18,
+  "element_ids": [
+    "fire",
+    "water",
+    "nature",
+    "lightning",
+    "ice",
+    "shadow"
+  ],
+  "scope_revision": "18 sheets; Resonate added as a distinct shared sequence",
+  "assets": [
+    {
+      "filename": "fx_charge_fire.png",
+      "relative_path": "fx/fx_charge_fire.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "97b2c31a499ad1538265bfe01ee134bfaada8750446580dd4b237a80b077f124",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping fire magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "fire"
+    },
+    {
+      "filename": "fx_charge_water.png",
+      "relative_path": "fx/fx_charge_water.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "6c23f53b141e9414478b6734adf8cc3cda97203b69d5c0a70cad5b3fa6c6b19a",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping water magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "water"
+    },
+    {
+      "filename": "fx_charge_nature.png",
+      "relative_path": "fx/fx_charge_nature.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "86c04458e71ffe4b97a6296a416b14d01893d1d61ac512c242b1e3f20adf0c61",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping nature magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "nature"
+    },
+    {
+      "filename": "fx_charge_lightning.png",
+      "relative_path": "fx/fx_charge_lightning.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "ed984d310ab5a5f7c22c1a48539dc543932f17ac84354ff49b29289cf7e6e5c5",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping lightning magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "lightning"
+    },
+    {
+      "filename": "fx_charge_ice.png",
+      "relative_path": "fx/fx_charge_ice.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "31bd3a6e09ffc45d10159ce8bfdcbb87185013dbea367ef41ef19a4b772d0adb",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping ice magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "ice"
+    },
+    {
+      "filename": "fx_charge_shadow.png",
+      "relative_path": "fx/fx_charge_shadow.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "cfc6026496399889f16a6e3f17ae082bbcf8196be7337a8fc66ce5e67f24e51e",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        150,
+        150
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Looping shadow magic forming at the head of the wright's already-rendered staff.",
+      "element_id": "shadow"
+    },
+    {
+      "filename": "fx_travel_bolt.png",
+      "relative_path": "fx/fx_travel_bolt.png",
+      "width": 1024,
+      "height": 512,
+      "sha256": "4d153100c9919f1b5cd0fce95bb342b0dcb35b91086dea719d4031636b54cd92",
+      "frames": 8,
+      "cols": 4,
+      "rows": 2,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": true,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        120,
+        120
+      ],
+      "runtime_tintable": true,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Element-neutral traveling force knot; tint to the dominant incantation element.",
+      "source_axis": "+X",
+      "source_motion": "left-to-right",
+      "leading_knot_side": "right",
+      "baked_trail_side": "left",
+      "runtime_rotation_degrees": -30,
+      "runtime_destination": "diagonally up-right",
+      "mirror": false
+    },
+    {
+      "filename": "fx_impact_fire.png",
+      "relative_path": "fx/fx_impact_fire.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "99d1752a231f4f4e1bdb9409d60fae6ba5b543647dd5eb7626d9a21784f00ab4",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength fire Fracture impact, beginning at contact and playing once.",
+      "element_id": "fire",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_impact_water.png",
+      "relative_path": "fx/fx_impact_water.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "f04924e802546a4a53c6762b7f5fc008a1739ccea06e6810b36ffb8786e1dfad",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength water Fracture impact, beginning at contact and playing once.",
+      "element_id": "water",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_impact_nature.png",
+      "relative_path": "fx/fx_impact_nature.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "1bf2f080f8e1d0626d0e40cfc1060e7eaa73e5904d54e18d2cbac98a2c82978a",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength nature Fracture impact, beginning at contact and playing once.",
+      "element_id": "nature",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_impact_lightning.png",
+      "relative_path": "fx/fx_impact_lightning.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "e9189799620f5882dadf3c29b0edcff42dae311535f7f99261b69c39d942c4bd",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength lightning Fracture impact, beginning at contact and playing once.",
+      "element_id": "lightning",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_impact_ice.png",
+      "relative_path": "fx/fx_impact_ice.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "eed0410952b467d8d45fd5e6cfb2052f9e61a6eafcf9d38b65872e62fdf43aa7",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength ice Fracture impact, beginning at contact and playing once.",
+      "element_id": "ice",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_impact_shadow.png",
+      "relative_path": "fx/fx_impact_shadow.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "8e1a604d0629ee5cf8ab6a9755e39b7439ab1897925aa76dabdc0c06e159d198",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Full-strength shadow Fracture impact, beginning at contact and playing once.",
+      "element_id": "shadow",
+      "outcome": "Fracture",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_resonate.png",
+      "relative_path": "fx/fx_resonate.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "de03fe030479eaff88b28c81ca7d4abbefe7c2ce7f2ffd14b67de8cb75652a2a",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": true,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Resonate-only outcome: exactly five separated motes drift apart with no central bite.",
+      "outcome": "Resonate only",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_fizzle.png",
+      "relative_path": "fx/fx_fizzle.png",
+      "width": 1024,
+      "height": 768,
+      "sha256": "78942eba87ae67fd2fb51685de1a1f04af8396951171637e836e99bfa7f7f21d",
+      "frames": 12,
+      "cols": 4,
+      "rows": 3,
+      "cell": [
+        256,
+        256
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        128,
+        128
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "All-Resist outcome: weak magic loses cohesion, drains toward gray, sags, and falls.",
+      "outcome": "All Resist",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_shatter.png",
+      "relative_path": "fx/fx_shatter.png",
+      "width": 2240,
+      "height": 640,
+      "sha256": "e57e40ae9099deda4f57e131faf1020e108528b6785d232ce4771193623a7a1f",
+      "frames": 14,
+      "cols": 7,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": false,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Perfect-incantation outcome: compressed magical plane cracks and throws hard shards.",
+      "outcome": "Shatter",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_shockwave.png",
+      "relative_path": "fx/fx_shockwave.png",
+      "width": 1920,
+      "height": 768,
+      "sha256": "cc6066ae791d8cfa709e041917757b4e1ab9b0bdc04b7c9ed9e29bffc844f5a8",
+      "frames": 10,
+      "cols": 5,
+      "rows": 2,
+      "cell": [
+        384,
+        384
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        192,
+        192
+      ],
+      "display_size": [
+        228,
+        228
+      ],
+      "runtime_tintable": true,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Element-neutral open shockwave ring; tint per element when used.",
+      "final_frame_empty": true
+    },
+    {
+      "filename": "fx_hitflash.png",
+      "relative_path": "fx/fx_hitflash.png",
+      "width": 960,
+      "height": 640,
+      "sha256": "20f5904c54784152ee3524fb58ee90fadcb6a6cf09d66ecbea9eee8da91c5f91",
+      "frames": 6,
+      "cols": 3,
+      "rows": 2,
+      "cell": [
+        320,
+        320
+      ],
+      "fps": 24,
+      "loop": false,
+      "pivot_per_cell": [
+        160,
+        160
+      ],
+      "display_size": [
+        190,
+        190
+      ],
+      "runtime_tintable": true,
+      "alpha": "straight RGBA",
+      "baked_text": null,
+      "role": "Universal radial contact flare with no creature silhouette; tint per element when used.",
+      "final_frame_empty": true
+    }
+  ]
+}
