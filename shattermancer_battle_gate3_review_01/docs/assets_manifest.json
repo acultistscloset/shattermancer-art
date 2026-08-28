@@ -1,0 +1,175 @@
+{
+  "pack": "Shattermancer Battle Gate 3 Review 01",
+  "gate": 3,
+  "template": "template_battle_corrected.json",
+  "assets": [
+    {
+      "filename": "book.png",
+      "relative_path": "02_grimoire/book.png",
+      "width": 880,
+      "height": 452,
+      "sha256": "4cf8a0ee376d56d55be91d85823ace78539e9653d38cace930d1d638bef1dae4",
+      "role": "Whole open Grimoire with covers, spine, page edges, two physical pages, and fixed inscriptions.",
+      "baked_text": "GRIM; OIRE; INCANTATION; INSIGHT",
+      "baked_marks": null,
+      "slots": {
+        "incantation_history": {"x": "10%-48%", "y": "25%-66%"},
+        "insight_history": {"x": "52%-90%", "y": "25%-66%"},
+        "draft_overlay": {"x": "7.7%-91.2%", "y": "68.3%-89.4%"}
+      },
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "draftArea.png",
+      "relative_path": "02_grimoire/draftArea.png",
+      "width": 736,
+      "height": 96,
+      "sha256": "f2e5338e0103a860ce6fea97ac3c1f3f98df54d07bbba93ba761b94d20981d35",
+      "role": "Muted parchment strip carrying six runtime rune sockets and the separate seal overlap.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "rune_sockets": {"x": "19.3%-96.4%", "y": "11%-89%", "repeat_count": 6}
+      },
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "slot.png",
+      "relative_path": "02_grimoire/slot.png",
+      "width": 74,
+      "height": 74,
+      "sha256": "f359f2f95d43b78d1e0967c2a58bba446a8d03443c7cc3142ea795d2661de59e",
+      "role": "One empty working-incantation rune socket, repeated six times.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {"element_mark": {"x": "18%-82%", "y": "18%-82%"}},
+      "medallion": {"cx": "50%", "cy": "50%", "d": "64%"},
+      "tintable": false,
+      "repeat_count": 6,
+      "states": ["default"]
+    },
+    {
+      "filename": "waxSeal.png",
+      "relative_path": "02_grimoire/waxSeal.png",
+      "width": 108,
+      "height": 96,
+      "sha256": "2f28aa86f3003830f7ba4b73217df51254429e081acb6a53d6c008d096549223",
+      "role": "Oxblood wax seal hiding the parchment cut edge.",
+      "baked_text": null,
+      "baked_marks": ["recessed staff-casting signet"],
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "clearRow.png",
+      "relative_path": "02_grimoire/clearRow.png",
+      "width": 74,
+      "height": 74,
+      "sha256": "aa3763823da6037f07b28f72c78848a26104ea133071253e42b9953fbc040b7f",
+      "role": "Distinct clear-incantation control at the right end of the parchment.",
+      "baked_text": null,
+      "baked_marks": ["brushed-away rune glyph"],
+      "slots": null,
+      "medallion": {"cx": "50%", "cy": "50%", "d": "72%"},
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "lowerUI.png",
+      "relative_path": "03_casting/lowerUI.png",
+      "width": 880,
+      "height": 414,
+      "sha256": "3c344c3deaacc911a2bfca0a98a9482d03fda627ad7d515d6c2f2ffd770dfcf5",
+      "role": "One unified lower surface behind casting controls, vials, and spell cards.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "rune_row": {"x": "6%-94%", "y": "0%-32%", "repeat_count": 6},
+        "cast_and_vials": {"x": "5%-95%", "y": "15%-49%"},
+        "spell_row": {"x": "2.5%-97%", "y": "50%-97%", "repeat_count": 4}
+      },
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "rune.png",
+      "relative_path": "03_casting/rune.png",
+      "width": 124,
+      "height": 128,
+      "sha256": "dc6ee6e792adbe24f235d85f6a13640dcf117cfa0d9e8ad66aa2e01d4451f050",
+      "role": "One reusable element control with empty runtime mark, name, and mana fields, repeated six times.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "element_mark": {"x": "17%-83%", "y": "4%-58%"},
+        "element_name": {"x": "12%-88%", "y": "61%-77%"},
+        "mana_groove": {"x": "12%-88%", "y": "82%-96%"}
+      },
+      "medallion": {"cx": "50%", "cy": "30%", "d": "66%"},
+      "tintable": false,
+      "repeat_count": 6,
+      "states": ["default"]
+    },
+    {
+      "filename": "cast.png",
+      "relative_path": "03_casting/cast.png",
+      "width": 346,
+      "height": 78,
+      "sha256": "8bc0703924826a424b1a2d31790d3a019064d7892d7394c0ee6592e079eb8642",
+      "role": "Primary CAST control with fixed centered lettering.",
+      "baked_text": "CAST",
+      "baked_marks": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": 1,
+      "states": ["default"]
+    },
+    {
+      "filename": "potionSlot.png",
+      "relative_path": "03_casting/potionSlot.png",
+      "width": 70,
+      "height": 64,
+      "sha256": "cf6c048fbc0b80aff77b39a67b5981ec71fd1f93a2db098824ff6ba385119be6",
+      "role": "One empty runtime vial socket, repeated three times on each side of CAST.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {"vial": {"x": "19%-81%", "y": "14%-86%"}},
+      "medallion": {"cx": "50%", "cy": "50%", "d": "62%"},
+      "tintable": false,
+      "repeat_count": 6,
+      "states": ["default"]
+    },
+    {
+      "filename": "spell.png",
+      "relative_path": "04_spells/spell.png",
+      "width": 180,
+      "height": 194,
+      "sha256": "d2af9a1c0e490da75b92c0e1337c38d5f1273324febfabaa447783caad2a92c6",
+      "role": "One reusable spell-card frame receiving an existing illustration plus runtime name and cost, repeated four times.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "illustration": {"x": "10%-90%", "y": "7%-73%"},
+        "spell_name": {"x": "10%-72%", "y": "77%-94%"},
+        "cost": {"x": "74%-96%", "y": "76%-97%"}
+      },
+      "medallion": {"cx": "85%", "cy": "87%", "d": "18%"},
+      "tintable": false,
+      "repeat_count": 4,
+      "states": ["default"]
+    }
+  ]
+}

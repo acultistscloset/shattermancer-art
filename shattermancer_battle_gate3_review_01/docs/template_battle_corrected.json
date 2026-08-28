@@ -1,0 +1,704 @@
+{
+  "screen": "battle",
+  "viewport": [
+    440,
+    795
+  ],
+  "safe": {
+    "top": 62,
+    "bottom": 34
+  },
+  "bands": [
+    {
+      "name": "stage",
+      "top": 4,
+      "bottom": 359,
+      "height": 355,
+      "pct": [
+        0.5,
+        45.2
+      ]
+    },
+    {
+      "name": "grimoire",
+      "top": 359,
+      "bottom": 585,
+      "height": 226,
+      "pct": [
+        45.2,
+        73.6
+      ]
+    },
+    {
+      "name": "casting",
+      "top": 584,
+      "bottom": 791,
+      "height": 207,
+      "pct": [
+        73.5,
+        99.5
+      ]
+    },
+    {
+      "name": "spell rack",
+      "top": 689,
+      "bottom": 786,
+      "height": 97,
+      "pct": [
+        86.7,
+        98.9
+      ]
+    }
+  ],
+  "elements": {
+    "sceneArt": {
+      "x": 0,
+      "y": 4,
+      "w": 440,
+      "h": 355,
+      "deliver": [
+        880,
+        710
+      ],
+      "is": "THE BACKDROP - where the fight happens"
+    },
+    "threat": {
+      "x": 0,
+      "y": 4,
+      "w": 440,
+      "h": 355,
+      "deliver": [
+        880,
+        710
+      ],
+      "is": "THREAT BANNERS - two stacked ribbons"
+    },
+    "bookPage": {
+      "x": 53,
+      "y": 397,
+      "w": 317,
+      "h": 154,
+      "deliver": [
+        634,
+        308
+      ],
+      "is": "the paper inside, both pages"
+    },
+    "enemySprite": {
+      "x": 229,
+      "y": 33,
+      "w": 207,
+      "h": 199,
+      "deliver": [
+        414,
+        398
+      ],
+      "is": "the creature - LEAVE EMPTY, one of 48"
+    },
+    "spellTray": {
+      "x": 11,
+      "y": 689,
+      "w": 412,
+      "h": 97,
+      "deliver": [
+        824,
+        194
+      ],
+      "is": "the spell rack - four cards"
+    },
+    "playerFig": {
+      "x": -16,
+      "y": 156,
+      "w": 165,
+      "h": 218,
+      "deliver": [
+        330,
+        436
+      ],
+      "is": "the wright - LEAVE EMPTY, his own painting"
+    },
+    "grimoire": {
+      "x": 46,
+      "y": 421,
+      "w": 352,
+      "h": 90,
+      "deliver": [
+        704,
+        180
+      ],
+      "is": "the record of past incantations and markers"
+    },
+    "runeArc": {
+      "x": 27,
+      "y": 586,
+      "w": 385,
+      "h": 64,
+      "deliver": [
+        770,
+        128
+      ],
+      "is": "the element row - builds every incantation"
+    },
+    "runes": {
+      "x": 27,
+      "y": 586,
+      "w": 385,
+      "h": 64,
+      "deliver": [
+        770,
+        128
+      ],
+      "is": "the six element controls"
+    },
+    "draftArea": {
+      "x": 34,
+      "y": 513,
+      "w": 368,
+      "h": 48,
+      "deliver": [
+        736,
+        96
+      ],
+      "is": "THE PARCHMENT STRIP the incantation is written on"
+    },
+    "castRow": {
+      "x": 0,
+      "y": 647,
+      "w": 440,
+      "h": 39,
+      "deliver": [
+        880,
+        78
+      ],
+      "is": "the CAST row: three vials, CAST, three vials"
+    },
+    "enemyPanel": {
+      "x": 2,
+      "y": 13,
+      "w": 215,
+      "h": 69,
+      "deliver": [
+        430,
+        138
+      ],
+      "is": "enemy rail: name, health, shield, wards"
+    },
+    "playerPanel": {
+      "x": 240,
+      "y": 287,
+      "w": 194,
+      "h": 71,
+      "deliver": [
+        388,
+        142
+      ],
+      "is": "your rail: craft, health, shield, relics"
+    },
+    "slots": {
+      "x": 105,
+      "y": 518,
+      "w": 284,
+      "h": 37,
+      "deliver": [
+        568,
+        74
+      ],
+      "is": ""
+    },
+    "spell": {
+      "x": 11,
+      "y": 689,
+      "w": 90,
+      "h": 97,
+      "deliver": [
+        180,
+        194
+      ],
+      "is": "one spell card: icon, name, cost"
+    },
+    "spell_2": {
+      "x": 118,
+      "y": 689,
+      "w": 90,
+      "h": 97,
+      "deliver": [
+        180,
+        194
+      ],
+      "is": ""
+    },
+    "spell_3": {
+      "x": 226,
+      "y": 689,
+      "w": 90,
+      "h": 97,
+      "deliver": [
+        180,
+        194
+      ],
+      "is": ""
+    },
+    "spell_4": {
+      "x": 333,
+      "y": 689,
+      "w": 90,
+      "h": 97,
+      "deliver": [
+        180,
+        194
+      ],
+      "is": ""
+    },
+    "cast": {
+      "x": 132,
+      "y": 647,
+      "w": 173,
+      "h": 39,
+      "deliver": [
+        346,
+        78
+      ],
+      "is": "the CAST control"
+    },
+    "bookHeads": {
+      "x": 53,
+      "y": 397,
+      "w": 317,
+      "h": 21,
+      "deliver": [
+        634,
+        42
+      ],
+      "is": "column headings - PAINTED IN, declare baked_text"
+    },
+    "enemyWards": {
+      "x": 11,
+      "y": 52,
+      "w": 180,
+      "h": 27,
+      "deliver": [
+        360,
+        54
+      ],
+      "is": ""
+    },
+    "resistTray": {
+      "x": 11,
+      "y": 52,
+      "w": 180,
+      "h": 27,
+      "deliver": [
+        360,
+        54
+      ],
+      "is": ""
+    },
+    "intent": {
+      "x": 256,
+      "y": 235,
+      "w": 178,
+      "h": 25,
+      "deliver": [
+        356,
+        50
+      ],
+      "is": "the damage ribbon inside the banners"
+    },
+    "relicStrip": {
+      "x": 250,
+      "y": 328,
+      "w": 177,
+      "h": 25,
+      "deliver": [
+        354,
+        50
+      ],
+      "is": ""
+    },
+    "rune": {
+      "x": 27,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": "ONE element control - the most-pressed thing here"
+    },
+    "rune_2": {
+      "x": 92,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": ""
+    },
+    "rune_3": {
+      "x": 157,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": ""
+    },
+    "rune_4": {
+      "x": 222,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": ""
+    },
+    "rune_5": {
+      "x": 286,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": ""
+    },
+    "rune_6": {
+      "x": 351,
+      "y": 586,
+      "w": 62,
+      "h": 64,
+      "deliver": [
+        124,
+        128
+      ],
+      "is": ""
+    },
+    "potionsR": {
+      "x": 311,
+      "y": 652,
+      "w": 106,
+      "h": 32,
+      "deliver": [
+        212,
+        64
+      ],
+      "is": ""
+    },
+    "enemyHP": {
+      "x": 6,
+      "y": 31,
+      "w": 167,
+      "h": 20,
+      "deliver": [
+        334,
+        40
+      ],
+      "is": ""
+    },
+    "enemyHPFill": {
+      "x": 6,
+      "y": 31,
+      "w": 167,
+      "h": 20,
+      "deliver": [
+        334,
+        40
+      ],
+      "is": ""
+    },
+    "potionsL": {
+      "x": 23,
+      "y": 652,
+      "w": 104,
+      "h": 32,
+      "deliver": [
+        208,
+        64
+      ],
+      "is": ""
+    },
+    "playerHP": {
+      "x": 250,
+      "y": 306,
+      "w": 133,
+      "h": 20,
+      "deliver": [
+        266,
+        40
+      ],
+      "is": ""
+    },
+    "playerHPFill": {
+      "x": 250,
+      "y": 306,
+      "w": 133,
+      "h": 20,
+      "deliver": [
+        266,
+        40
+      ],
+      "is": ""
+    },
+    "waxSeal": {
+      "x": 49,
+      "y": 512,
+      "w": 54,
+      "h": 48,
+      "deliver": [
+        108,
+        96
+      ],
+      "is": "the wax seal at the strip's left end"
+    },
+    "topBar": {
+      "x": 334,
+      "y": 4,
+      "w": 99,
+      "h": 26,
+      "deliver": [
+        198,
+        52
+      ],
+      "is": "the purse and the settings control"
+    },
+    "slot": {
+      "x": 105,
+      "y": 518,
+      "w": 37,
+      "h": 37,
+      "deliver": [
+        74,
+        74
+      ],
+      "is": ""
+    },
+    "slot_2": {
+      "x": 145,
+      "y": 518,
+      "w": 37,
+      "h": 37,
+      "deliver": [
+        74,
+        74
+      ],
+      "is": ""
+    },
+    "slot_3": {
+      "x": 185,
+      "y": 518,
+      "w": 37,
+      "h": 37,
+      "deliver": [
+        74,
+        74
+      ],
+      "is": ""
+    },
+    "purseBar": {
+      "x": 349,
+      "y": 5,
+      "w": 52,
+      "h": 24,
+      "deliver": [
+        104,
+        48
+      ],
+      "is": ""
+    },
+    "mana-fire": {
+      "x": 27,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "mana-water": {
+      "x": 92,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "mana-nature": {
+      "x": 157,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "mana-lightning": {
+      "x": 222,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "mana-ice": {
+      "x": 286,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "mana-shadow": {
+      "x": 351,
+      "y": 627,
+      "w": 62,
+      "h": 20,
+      "deliver": [
+        124,
+        40
+      ],
+      "is": ""
+    },
+    "enemyBlock": {
+      "x": 176,
+      "y": 19,
+      "w": 33,
+      "h": 32,
+      "deliver": [
+        66,
+        64
+      ],
+      "is": "enemy SHIELD BADGE - a plate holding a number"
+    },
+    "playerBlock": {
+      "x": 392,
+      "y": 294,
+      "w": 33,
+      "h": 32,
+      "deliver": [
+        66,
+        64
+      ],
+      "is": "your SHIELD BADGE - a plate holding a number"
+    },
+    "legendBtn": {
+      "x": 363,
+      "y": 367,
+      "w": 32,
+      "h": 29,
+      "deliver": [
+        64,
+        58
+      ],
+      "is": ""
+    },
+    "battleSettings": {
+      "x": 407,
+      "y": 4,
+      "w": 26,
+      "h": 26,
+      "deliver": [
+        52,
+        52
+      ],
+      "is": ""
+    },
+    "bookUp": {
+      "x": 347,
+      "y": 396,
+      "w": 17,
+      "h": 15,
+      "deliver": [
+        34,
+        30
+      ],
+      "is": ""
+    },
+    "bookDown": {
+      "x": 347,
+      "y": 396,
+      "w": 17,
+      "h": 15,
+      "deliver": [
+        34,
+        30
+      ],
+      "is": ""
+    },
+    "book": {
+      "x": 0,
+      "y": 359,
+      "w": 440,
+      "h": 226,
+      "deliver": [
+        880,
+        452
+      ],
+      "is": "THE GRIMOIRE — covers, page edges AND both open pages"
+    },
+    "lowerUI": {
+      "x": 0,
+      "y": 584,
+      "w": 440,
+      "h": 207,
+      "deliver": [
+        880,
+        414
+      ],
+      "is": "the one surface behind buttons, CAST, vials, cards"
+    },
+    "abilityTag": {
+      "x": 256,
+      "y": 262,
+      "w": 178,
+      "h": 24,
+      "deliver": [
+        356,
+        48
+      ],
+      "is": "the ABILITY banner — shown only sometimes"
+    },
+    "clearRow": {
+      "x": 376,
+      "y": 517,
+      "w": 37,
+      "h": 37,
+      "deliver": [
+        74,
+        74
+      ],
+      "is": "clears the incantation — not a rune socket"
+    },
+    "potionSlot": {
+      "x": 23,
+      "y": 652,
+      "w": 35,
+      "h": 32,
+      "deliver": [
+        70,
+        64
+      ],
+      "is": "ONE potion socket, repeated 6 times"
+    }
+  }
+}

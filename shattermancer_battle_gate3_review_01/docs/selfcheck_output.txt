@@ -1,0 +1,25 @@
+
+  ok    present: 00_READ_ME_FIRST.md
+  ok    present: docs/assets_manifest.json
+  ok    present: docs/placement_notes.md
+  ok    present: docs/validation_report.md
+  ok    10 entries in the manifest
+  ok    template loaded: 59 pieces with declared sizes
+  ok    every file is declared and every declaration exists
+  ok    book.png: 880x452, exactly as the template asks
+  ok    book.png: declares baked text 'GRIM; OIRE; INCANTATION; INSIGHT' — the game will suppress its own
+  ok    draftArea.png: 736x96, exactly as the template asks
+  ok    slot.png: 74x74, exactly as the template asks
+  ok    waxSeal.png: 108x96, exactly as the template asks
+  ok    clearRow.png: 74x74, exactly as the template asks
+  ok    lowerUI.png: 880x414, exactly as the template asks
+  ok    rune.png: 124x128, exactly as the template asks
+  ok    cast.png: 346x78, exactly as the template asks
+  ok    cast.png: declares baked text 'CAST' — the game will suppress its own
+  ok    potionSlot.png: 70x64, exactly as the template asks
+  ok    spell.png: 180x194, exactly as the template asks
+  ok    preview is 880x1590, the right shape to compare
+
+
+
+CLEAN. Send it.
