@@ -1,0 +1,177 @@
+{
+  "pack": "Shattermancer Battle Gate 2 Stage Review 05",
+  "gate": 2,
+  "template": "corrected battle-template(3).zip",
+  "assets": [
+    {
+      "filename": "sceneArt_act1.png",
+      "relative_path": "01_stage/sceneArt_act1.png",
+      "width": 880,
+      "height": 710,
+      "sha256": "066216aea85ade27bfded5ec23147aa2bed70319cb7b6f5378e17802be6c1ab8",
+      "role": "The Wakeful Forest stage backdrop, placed edge-to-edge in the fixed stage band.",
+      "baked_text": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "sceneArt_act2.png",
+      "relative_path": "01_stage/sceneArt_act2.png",
+      "width": 880,
+      "height": 710,
+      "sha256": "77571902cc152ef36174e3e67ca12d921357c95d669cc51d44ba1e9caeb89b97",
+      "role": "The Seeping Deep stage backdrop, placed edge-to-edge in the fixed stage band.",
+      "baked_text": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "sceneArt_act3.png",
+      "relative_path": "01_stage/sceneArt_act3.png",
+      "width": 880,
+      "height": 710,
+      "sha256": "7362af45bfbcb0591eab21597978985c51ea434cfc4f7951b50a4fdcea5ac55e",
+      "role": "The Unmade Citadel stage backdrop, placed edge-to-edge in the fixed stage band.",
+      "baked_text": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "enemyPanel.png",
+      "relative_path": "01_stage/enemyPanel.png",
+      "width": 430,
+      "height": 138,
+      "sha256": "baad65abda0eba5c21f51c87cc0afd1929de2452c8c2d5ef4adfe360f358006f",
+      "role": "Empty creature status rail containing the fixed runtime recesses for name, health, shield, and wards.",
+      "baked_text": null,
+      "slots": {
+        "name": {
+          "x": "4%-78%",
+          "y": "6%-24%"
+        },
+        "health": {
+          "x": "2%-80%",
+          "y": "26%-55%"
+        },
+        "shield": {
+          "x": "81%-96%",
+          "y": "9%-55%"
+        },
+        "wards": {
+          "x": "4%-88%",
+          "y": "57%-96%",
+          "repeat_count": 6
+        }
+      },
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "playerPanel.png",
+      "relative_path": "01_stage/playerPanel.png",
+      "width": 388,
+      "height": 142,
+      "sha256": "2bcbddcbda4c9d56281aec05bf7037581077a0b6f085d8fbe578ce12a8e02e3d",
+      "role": "Empty wright status rail containing the fixed runtime recesses for discipline, health, shield, and relics.",
+      "baked_text": null,
+      "slots": {
+        "discipline": {
+          "x": "5%-74%",
+          "y": "6%-24%"
+        },
+        "health": {
+          "x": "5%-74%",
+          "y": "27%-55%"
+        },
+        "shield": {
+          "x": "78%-95%",
+          "y": "10%-55%"
+        },
+        "relics": {
+          "x": "5%-96%",
+          "y": "58%-93%",
+          "repeat_count": 8
+        }
+      },
+      "medallion": null,
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "intent.png",
+      "relative_path": "01_stage/intent.png",
+      "width": 356,
+      "height": 50,
+      "sha256": "d33a48cc73ee6d3a7d31927672dd69a3da23939d652d283e5885554b18f8470d",
+      "role": "Standalone attack ribbon with a fixed sword mark and an empty runtime value field.",
+      "baked_text": null,
+      "slots": {
+        "value": {
+          "x": "18%-94%",
+          "y": "18%-82%"
+        }
+      },
+      "medallion": {
+        "cx": "7%",
+        "cy": "50%",
+        "d": "84%"
+      },
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    },
+    {
+      "filename": "abilityTag.png",
+      "relative_path": "01_stage/abilityTag.png",
+      "width": 356,
+      "height": 48,
+      "sha256": "173d547a775b133292249551462b41c32c783a9ac6a4a6b1bad902fc8ef2e217",
+      "role": "Conditional standalone ability ribbon with empty runtime icon and text fields.",
+      "baked_text": null,
+      "slots": {
+        "icon": {
+          "x": "1%-13%",
+          "y": "8%-92%"
+        },
+        "ability": {
+          "x": "16%-94%",
+          "y": "16%-84%"
+        }
+      },
+      "medallion": {
+        "cx": "7%",
+        "cy": "50%",
+        "d": "82%"
+      },
+      "tintable": false,
+      "repeat_count": null,
+      "states": [
+        "default"
+      ]
+    }
+  ]
+}

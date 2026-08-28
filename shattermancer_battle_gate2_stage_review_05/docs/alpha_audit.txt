@@ -1,0 +1,8 @@
+Production cutout alpha audit
+
+enemyPanel.png: pale-neutral fringe pixels 0; RGB beneath alpha 0 pixels 0; partial-alpha pixels 3454
+playerPanel.png: pale-neutral fringe pixels 0; RGB beneath alpha 0 pixels 0; partial-alpha pixels 3613
+intent.png: pale-neutral fringe pixels 0; RGB beneath alpha 0 pixels 0; partial-alpha pixels 2164
+abilityTag.png: pale-neutral fringe pixels 0; RGB beneath alpha 0 pixels 0; partial-alpha pixels 2217
+
+The remaining single high-value edge pixel on each status frame is a saturated painted brass highlight, not a neutral white matte pixel.

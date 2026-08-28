@@ -1,0 +1,17 @@
+  ok    present: 00_READ_ME_FIRST.md
+  ok    present: docs/assets_manifest.json
+  ok    present: docs/placement_notes.md
+  ok    present: docs/validation_report.md
+  ok    7 entries in the manifest
+  ok    template loaded: 62 pieces with declared sizes
+  ok    every file is declared and every declaration exists
+  ok    sceneArt_act1.png: 880x710, exactly as the template asks
+  ok    sceneArt_act2.png: 880x710, exactly as the template asks
+  ok    sceneArt_act3.png: 880x710, exactly as the template asks
+  ok    enemyPanel.png: 430x138, exactly as the template asks
+  ok    playerPanel.png: 388x142, exactly as the template asks
+  ok    intent.png: 356x50, exactly as the template asks
+  ok    abilityTag.png: 356x48, exactly as the template asks
+  ok    preview is 880x1590, the right shape to compare
+
+CLEAN. Send it.
