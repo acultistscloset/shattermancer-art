@@ -1,0 +1,19 @@
+
+  ok    present: 00_READ_ME_FIRST.md
+  ok    present: docs/assets_manifest.json
+  ok    present: docs/placement_notes.md
+  ok    present: docs/validation_report.md
+  ok    6 entries in the manifest
+  ok    template loaded: 59 pieces with declared sizes
+  ok    every file is declared and every declaration exists
+  ok    enemyHP.png: 334x40, exactly as the template asks
+  ok    playerHP.png: 266x40, exactly as the template asks
+  ok    enemyBlock.png: 66x64, exactly as the template asks
+  ok    playerBlock.png: 66x64, exactly as the template asks
+  ok    topBar.png: 198x52, exactly as the template asks
+  ok    legendBtn.png: 64x58, exactly as the template asks
+  ok    preview is 880x1590, the right shape to compare
+
+
+
+CLEAN. Send it.

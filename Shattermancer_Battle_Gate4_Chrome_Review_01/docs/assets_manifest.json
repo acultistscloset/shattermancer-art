@@ -1,0 +1,90 @@
+{
+  "pack": "Shattermancer Battle Gate 4 Chrome Review 01",
+  "gate": 4,
+  "assets": [
+    {
+      "filename": "enemyHP.png",
+      "relative_path": "05_chrome/enemyHP.png",
+      "width": 334,
+      "height": 40,
+      "sha256": "15df67fac52496e40bf483dfb853dad0b175a7335f09a5196c0a90fca98d22b2",
+      "role": "Stretchable crimson fill body for the enemy health groove already painted into enemyPanel.png.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "playerHP.png",
+      "relative_path": "05_chrome/playerHP.png",
+      "width": 266,
+      "height": 40,
+      "sha256": "33c0add9bb875bb5c7e872f62b474ac6f6966130f0bd5a6ca53e08afacceabd1",
+      "role": "Stretchable crimson fill body for the wright health groove already painted into playerPanel.png.",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": null,
+      "medallion": null,
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "enemyBlock.png",
+      "relative_path": "05_chrome/enemyBlock.png",
+      "width": 66,
+      "height": 64,
+      "sha256": "896c4cb6682a6956c5e3db6cae3e44e654001df3e5930ce62e75e439a2b85151",
+      "role": "Enemy shield-number badge placed inside the shield recess of enemyPanel.png.",
+      "baked_text": null,
+      "baked_marks": ["shield silhouette"],
+      "slots": {"shield_number": {"x": "25%-75%", "y": "24%-72%"}},
+      "medallion": {"cx": "50%", "cy": "48%", "d": "50%"},
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "playerBlock.png",
+      "relative_path": "05_chrome/playerBlock.png",
+      "width": 66,
+      "height": 64,
+      "sha256": "896c4cb6682a6956c5e3db6cae3e44e654001df3e5930ce62e75e439a2b85151",
+      "role": "Wright shield-number badge placed inside the shield recess of playerPanel.png.",
+      "baked_text": null,
+      "baked_marks": ["shield silhouette"],
+      "slots": {"shield_number": {"x": "25%-75%", "y": "24%-72%"}},
+      "medallion": {"cx": "50%", "cy": "48%", "d": "50%"},
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "topBar.png",
+      "relative_path": "05_chrome/topBar.png",
+      "width": 198,
+      "height": 52,
+      "sha256": "2206881f2b50991bdb369f013664569a49c39bc9c8d73815935e0daf5bf4499b",
+      "role": "Top-right combined Aurel counter plate and settings control with an empty runtime-number recess.",
+      "baked_text": null,
+      "baked_marks": ["Aurel sun emblem", "settings cog"],
+      "slots": {"aurel_total": {"x": "26%-76%", "y": "18%-82%"}},
+      "medallion": null,
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "legendBtn.png",
+      "relative_path": "05_chrome/legendBtn.png",
+      "width": 64,
+      "height": 58,
+      "sha256": "f45284f5458066e81ce38cdbdb8d877adea3e8188b4dfe1794b3d2249ef4a66a",
+      "role": "Grimoire control opening the Insight-marker legend.",
+      "baked_text": ["?"],
+      "baked_marks": ["legend question mark"],
+      "slots": null,
+      "medallion": {"cx": "50%", "cy": "49%", "d": "72%"},
+      "tintable": false,
+      "states": ["default"]
+    }
+  ]
+}
