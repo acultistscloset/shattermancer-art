@@ -1,0 +1,73 @@
+{
+  "pack": "Shattermancer Battle Gate 3 Recess Tuning 01",
+  "gate": 3,
+  "correction_only": true,
+  "review_required_before_implementation": true,
+  "supersedes_after_approval": "Shattermancer Battle Gate 3 Recess Correction FINAL",
+  "assets": [
+    {
+      "filename": "rune.png",
+      "relative_path": "updates/03_casting/rune.png",
+      "width": 124,
+      "height": 128,
+      "drawn_width": 62,
+      "drawn_height": 64,
+      "repeat_count": 6,
+      "sha256": "6c36a39fa16b14ac4d484c38b7878399af96c8e2110701a70901cb5f499663d7",
+      "replaces_sha256": "48f550c4964b1798aedb1d9caabcc8d4dbce82576d330f596f48034f9ef23f5e",
+      "role": "Reusable element control receiving runtime element mark/name/mana content",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "element_mark": {"x": "17%-83%", "y": "4%-58%"},
+        "element_name": {"x": "12%-88%", "y": "61%-77%"},
+        "mana_groove": {"x": "12%-88%", "y": "82%-96%"}
+      },
+      "medallion": {"cx": "50%", "cy": "30%", "d": "66%"},
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "potionSlot.png",
+      "relative_path": "updates/03_casting/potionSlot.png",
+      "width": 70,
+      "height": 64,
+      "drawn_width": 35,
+      "drawn_height": 32,
+      "repeat_count": 6,
+      "sha256": "a2fb43fc2913bc5af7eac834eb2e62aab9c8b4658ba976265509338111d761b8",
+      "replaces_sha256": "cf6c048fbc0b80aff77b39a67b5981ec71fd1f93a2db098824ff6ba385119be6",
+      "role": "Reusable empty runtime potion/vial socket, repeated three times on each side of CAST",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "vial": {"x": "19%-81%", "y": "14%-86%"}
+      },
+      "medallion": {"cx": "50%", "cy": "50%", "d": "62%"},
+      "tintable": false,
+      "states": ["default"]
+    },
+    {
+      "filename": "spell.png",
+      "relative_path": "updates/04_spells/spell.png",
+      "width": 180,
+      "height": 194,
+      "drawn_width": 90,
+      "drawn_height": 97,
+      "repeat_count": 4,
+      "sha256": "221b3b8441527b3e5a3ad3152d4e517b234e4b2c1c17313bdaf57b5b0a8bb44f",
+      "replaces_sha256": "f7259c162d745b8e0eb164bcaadd3bd0ad0bf7e257a05a1a9eea6d21fb2586e2",
+      "role": "Reusable spell-card frame receiving runtime illustration/name/cost",
+      "baked_text": null,
+      "baked_marks": null,
+      "slots": {
+        "illustration": {"x": "10%-90%", "y": "7%-73%"},
+        "spell_name": {"x": "10%-72%", "y": "77%-94%"},
+        "cost": {"x": "74%-96%", "y": "76%-97%"}
+      },
+      "medallion": {"cx": "85%", "cy": "87%", "d": "18%"},
+      "tintable": false,
+      "states": ["default"]
+    }
+  ]
+}

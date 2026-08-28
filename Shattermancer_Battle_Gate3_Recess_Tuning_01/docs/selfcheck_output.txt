@@ -1,0 +1,16 @@
+
+  ok    present: 00_READ_ME_FIRST.md
+  ok    present: docs/assets_manifest.json
+  ok    present: docs/placement_notes.md
+  ok    present: docs/validation_report.md
+  ok    3 entries in the manifest
+  ok    template loaded: 59 pieces with declared sizes
+  ok    every file is declared and every declaration exists
+  ok    rune.png: 124x128, exactly as the template asks
+  ok    potionSlot.png: 70x64, exactly as the template asks
+  ok    spell.png: 180x194, exactly as the template asks
+  ok    preview is 880x1590, the right shape to compare
+
+
+
+CLEAN. Send it.
