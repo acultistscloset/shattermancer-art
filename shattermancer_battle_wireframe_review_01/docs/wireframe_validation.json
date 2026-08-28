@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "checks": {
+    "preview_dimensions": [
+      880,
+      1590
+    ],
+    "expected_dimensions": [
+      880,
+      1590
+    ],
+    "mode": "RGB",
+    "viewport_source": [
+      440,
+      795
+    ],
+    "bands_source": [
+      {
+        "name": "stage",
+        "top": 4,
+        "bottom": 359,
+        "height": 355,
+        "pct": [
+          0.5,
+          45.2
+        ]
+      },
+      {
+        "name": "grimoire",
+        "top": 359,
+        "bottom": 585,
+        "height": 226,
+        "pct": [
+          45.2,
+          73.6
+        ]
+      },
+      {
+        "name": "casting",
+        "top": 584,
+        "bottom": 791,
+        "height": 207,
+        "pct": [
+          73.5,
+          99.5
+        ]
+      },
+      {
+        "name": "spell rack",
+        "top": 689,
+        "bottom": 786,
+        "height": 97,
+        "pct": [
+          86.7,
+          98.9
+        ]
+      }
+    ],
+    "grayscale_only": true,
+    "finished_art_present": false,
+    "layout_changes_proposed": false,
+    "template_positions_scaled_exactly": true,
+    "sha256": "4b85330c9a27ccf499810e841453c5a20d6ed9c3aff9667e390e1e7d1e43a228"
+  }
+}
