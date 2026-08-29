@@ -1,0 +1,333 @@
+{
+ "schema": "PHASE0_SCREEN_INVENTORY_TEMPLATE.json",
+ "source": "production snapshot Shattermancer.zip, index.html sha256 2c908e9d\u2026",
+ "counts": {
+  "full_screen": 17,
+  "modal": 3,
+  "overlay": 2,
+  "transient": 5,
+  "persistent_panel": 2,
+  "total": 29
+ },
+ "screens": [
+  {
+   "id": "SCR-TITLE",
+   "name": "Title / Main Menu",
+   "type": "full_screen",
+   "implementation": "showTitle",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable \u2014 entry point",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SCHOOLS",
+   "name": "Discipline Selection",
+   "type": "full_screen",
+   "implementation": "showSchools",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable from title",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-MAP",
+   "name": "The Path (map)",
+   "type": "full_screen",
+   "implementation": "showMap",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-BATTLE",
+   "name": "Battle",
+   "type": "full_screen",
+   "implementation": "showBattle + body.inBattle",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable from map",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SHOP",
+   "name": "Sanctum (shop)",
+   "type": "full_screen",
+   "implementation": "openShop",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable from a map node",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-REST",
+   "name": "Camp (rest)",
+   "type": "full_screen",
+   "implementation": "showRest",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable from a map node",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-REWARD",
+   "name": "Reward",
+   "type": "full_screen",
+   "implementation": "showReward",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "post-battle",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-NODEREWARD",
+   "name": "Node Reward",
+   "type": "full_screen",
+   "implementation": "showNodeReward",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "post-node",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-TREASURE",
+   "name": "Treasure",
+   "type": "overlay",
+   "implementation": "showTreasure",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "map node",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SUMMARY",
+   "name": "Run Summary / Run End",
+   "type": "full_screen",
+   "implementation": "showSummary",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "run end",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-CHARACTER",
+   "name": "Character",
+   "type": "full_screen",
+   "implementation": "showCharacter",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-TALENTS",
+   "name": "Talents",
+   "type": "full_screen",
+   "implementation": "showTalents",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SPELLBOOK",
+   "name": "Spellbook",
+   "type": "full_screen",
+   "implementation": "showSpellbook",
+   "evidence": "UNKNOWN_RUNTIME_CHECK_REQUIRED",
+   "reachability": "DEFINED BUT NEVER CALLED \u2014 0 call sites",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SETTINGS",
+   "name": "Settings",
+   "type": "full_screen",
+   "implementation": "showSettings",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-GLOSSARY",
+   "name": "Glossary",
+   "type": "full_screen",
+   "implementation": "showGlossary",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "from settings",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-ACHIEVEMENTS",
+   "name": "Achievements",
+   "type": "full_screen",
+   "implementation": "showAchievements",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-TRIALS",
+   "name": "Trials",
+   "type": "full_screen",
+   "implementation": "showTrials",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "reachable",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-LOADOUT",
+   "name": "Loadout",
+   "type": "overlay",
+   "implementation": "showLoadout",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "pre-run",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-SANDBOX",
+   "name": "Sandbox (dev)",
+   "type": "full_screen",
+   "implementation": "showSandbox",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "DEBUG/DEV surface, 12 call sites",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-PICKER",
+   "name": "Generic picker",
+   "type": "modal",
+   "implementation": "openPicker / #picker",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "in-battle and elsewhere",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-MANAPICKER",
+   "name": "Mana picker",
+   "type": "modal",
+   "implementation": "openManaPicker",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "in-battle",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-CHOICE",
+   "name": "Choice dialog",
+   "type": "modal",
+   "implementation": "openChoice",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "confirmations",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-TIP",
+   "name": "Tip / tooltip card",
+   "type": "transient",
+   "implementation": "showTip / #tipLayer #tipCard",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "hover/tap",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-TOAST",
+   "name": "Toast",
+   "type": "transient",
+   "implementation": "#toast",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "transient notices",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-BANNER",
+   "name": "Banner",
+   "type": "transient",
+   "implementation": "#banner",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "transient announcements",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "OVL-FX",
+   "name": "FX layer",
+   "type": "transient",
+   "implementation": "#fx + 18 fxsheet entries",
+   "evidence": "VERIFIED_ASSET_OR_CONFIG",
+   "reachability": "spell effects",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "PNL-TOPBAR",
+   "name": "Top bar (persistent)",
+   "type": "persistent_panel",
+   "implementation": "#topBar #purseBar #track",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "present across screens",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "PNL-GRIMOIRE",
+   "name": "Grimoire (battle panel)",
+   "type": "persistent_panel",
+   "implementation": "#book #bookPage #grimoire #draftArea",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "battle only",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  },
+  {
+   "id": "SCR-LESSON",
+   "name": "Tutorial / lesson",
+   "type": "transient",
+   "implementation": "LESSON + rw_lesson_done",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "first run, localStorage-gated",
+   "regions": "see PHASE0_SCREEN_INVENTORY.md",
+   "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
+   "unknowns": []
+  }
+ ]
+}
