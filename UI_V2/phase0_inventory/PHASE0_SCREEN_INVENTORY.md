@@ -7,14 +7,39 @@ Descriptions are at inventory level. **No production source is reproduced.**
 
 ## Classification counts
 
+Revised 2026-08-29 after the blocking unknowns closed.
+
+### Player-facing
+
 | type | count |
 |---|---|
-| full screen | 17 |
+| full screen | **15** |
 | modal | 3 |
 | overlay | 2 |
 | transient | 5 |
 | persistent panel | 2 |
-| **total records** | **29** |
+| **player-facing subtotal** | **27** |
+
+### Development / diagnostic — not player-facing
+
+| type | count |
+|---|---|
+| development screen (in-game) | 1 — Sandbox |
+| development diagnostic surface (standalone) | 3 — the root HTML tools |
+| development debug control (Settings rows) | 2 — Inspector, Dev unlock |
+| **development subtotal** | **6** |
+
+### Not a surface
+
+| type | count |
+|---|---|
+| dormant code path | 1 — `showSpellbook` |
+
+**Total records: 34.**
+
+Two changes from the first count: `showSpellbook` was reclassified out of the
+full-screen total once P0-U001 closed, and six development surfaces were added
+that the repository-only pass had not recorded as inventory items.
 
 ## Full screens
 
@@ -38,8 +63,30 @@ mechanism. Evidence `VERIFIED_CODE` unless stated.
 | SCR-GLOSSARY | Glossary | `showGlossary` | from settings |
 | SCR-ACHIEVEMENTS | Achievements | `showAchievements` | |
 | SCR-TRIALS | Trials | `showTrials` | |
-| SCR-SANDBOX | Sandbox | `showSandbox` | **dev surface, 12 edges** |
-| **SCR-SPELLBOOK** | **Spellbook** | `showSpellbook` | **`UNKNOWN_RUNTIME_CHECK_REQUIRED` — defined, zero call sites (P0-U001)** |
+
+**Reclassified out of this table:**
+
+- **SCR-SANDBOX** — in-game **development screen**, 12 call sites. Not
+  player-facing by owner intent.
+- **SCR-SPELLBOOK** — **dormant code path**, closed under P0-U001. Deliberately
+  superseded by `showLoadout`. Not a v2 surface.
+
+## Development and diagnostic surfaces
+
+Not player-facing. Recorded because they exist and are reachable, **not** as
+game screens.
+
+| id | surface | reachability |
+|---|---|---|
+| DEV-BATTLELAYOUT | `battle-layout.html`, 11 KB | **loads by direct URL** in the current deployment |
+| DEV-LAYOUTSTUDIO | `layout-studio.html`, 2.5 MB | **loads by direct URL** |
+| DEV-WIREFRAME | `wireframe.html`, 74 KB | **loads by direct URL** |
+| SCR-SANDBOX | in-game Sandbox screen | 12 call sites |
+| DBG-INSPECTOR | Inspector row in Settings | **visible and player-reachable; activation nonfunctional in the live deployment** |
+| DBG-DEVUNLOCK | Dev unlock row in Settings | **visible and functional**; owner intent is testing only, to be removed before release |
+
+Owner context: the three HTML tools were created to troubleshoot Battle art and
+layout. Direct URL reachability does not make them player-facing screens.
 
 ## Modals and overlays
 
@@ -99,7 +146,7 @@ incantation contents, history entries.
 | battle | yes |
 | shop / sanctum | yes |
 | character | yes |
-| spells | **`showSpellbook` defined, never called** |
+| spells | Loadout serves this; `showSpellbook` closed as dormant (P0-U001) |
 | talents | yes |
 | settings | yes |
 | grimoire / insight | yes |
@@ -110,5 +157,5 @@ incantation contents, history entries.
 | tutorial / help / legend | yes |
 | **pause / back behavior** | back edges yes; **no pause screen found** |
 | **loading / transitions** | **not found** |
-| debug / dev UI | **yes — Sandbox and `eruda.js`** |
+| debug / dev UI | **yes — Sandbox, 3 root HTML tools, Inspector and Dev unlock rows** |
 | save / resume states | **not found (P0-U007)** |

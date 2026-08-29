@@ -34,7 +34,7 @@ Title  ->  Discipline Selection  ->  Loadout  ->  The Path (map)
 | `showTrials` | 3 | |
 | `showAchievements` | 2 | |
 | `openShop`, `showRest`, `showReward`, `showNodeReward`, `showCharacter`, `showGlossary`, `showTreasure` | 1 each | |
-| **`showSpellbook`** | **0** | **defined, never called — P0-U001** |
+| ~~`showSpellbook`~~ | 0 | **CLOSED P0-U001** — dormant, superseded by `showLoadout`. Not a navigable target. |
 
 ## Modal and transient overlays
 
@@ -52,10 +52,14 @@ battle      ->  #fx          (18 declared sprite sheets)
 
 - **Tutorial / lesson** — gated by `localStorage.rw_lesson_done` and `rw_tut`.
   First-run only; the mechanism is verified, the exact path is not.
-- **Sandbox** — a development surface with 12 call sites. **Whether it is
-  reachable in production is P0-U004/P0-U003.**
-- **Developer console** — `eruda.js` toggles via a runtime condition. Trigger
-  unverified.
+- **Sandbox** — an in-game development screen, 12 call sites. Not player-facing
+  by owner intent.
+- **Developer console** — trigger identified: a click on the "Open" button in the
+  **Inspector row of Settings**, ungated by any conditional. **Runtime: the row
+  is visible and player-reachable; activation does not launch the console in the
+  live deployment.** (P0-U004, closed)
+- **Dev unlock** — a Settings row, **visible and functional**. Owner intent:
+  testing only, to be removed before release. (P0-U004, closed)
 
 ## Back and resume paths
 
@@ -68,6 +72,20 @@ battle      ->  #fx          (18 declared sprite sheets)
 
 `showSummary` is called from three sites. **Distinct victory and defeat
 surfaces were not found** — see P0-U009.
+
+## Development / diagnostic entry points — outside the player navigation graph
+
+**Reachable by direct URL in the current deployment** (P0-U003, closed), but not
+reachable from any in-game navigation edge and not player-facing:
+
+```
+<live-url>/battle-layout.html     diagnostic tool
+<live-url>/layout-studio.html     diagnostic tool
+<live-url>/wireframe.html         diagnostic tool
+```
+
+Owner context: created to troubleshoot Battle art and layout. `/eruda.js` and
+`/localStorage.json` also load by direct URL.
 
 ## Not found
 

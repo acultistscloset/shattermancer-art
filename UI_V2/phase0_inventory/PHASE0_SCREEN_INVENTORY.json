@@ -2,12 +2,16 @@
  "schema": "PHASE0_SCREEN_INVENTORY_TEMPLATE.json",
  "source": "production snapshot Shattermancer.zip, index.html sha256 2c908e9d\u2026",
  "counts": {
-  "full_screen": 17,
+  "development_debug_control": 2,
+  "development_diagnostic_surface": 3,
+  "development_screen": 1,
+  "dormant_code_path": 1,
+  "full_screen": 15,
   "modal": 3,
   "overlay": 2,
-  "transient": 5,
   "persistent_panel": 2,
-  "total": 29
+  "transient": 5,
+  "total": 34
  },
  "screens": [
   {
@@ -145,10 +149,10 @@
   {
    "id": "SCR-SPELLBOOK",
    "name": "Spellbook",
-   "type": "full_screen",
+   "type": "dormant_code_path",
    "implementation": "showSpellbook",
-   "evidence": "UNKNOWN_RUNTIME_CHECK_REQUIRED",
-   "reachability": "DEFINED BUT NEVER CALLED \u2014 0 call sites",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "CLOSED P0-U001 \u2014 unreachable. 0 call sites, no dynamic dispatch anywhere in the file, and data-go=\"spells\" dispatches to showLoadout. Deliberately superseded. NOT a v2 surface.",
    "regions": "see PHASE0_SCREEN_INVENTORY.md",
    "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
    "unknowns": []
@@ -211,10 +215,10 @@
   {
    "id": "SCR-SANDBOX",
    "name": "Sandbox (dev)",
-   "type": "full_screen",
+   "type": "development_screen",
    "implementation": "showSandbox",
    "evidence": "VERIFIED_CODE",
-   "reachability": "DEBUG/DEV surface, 12 call sites",
+   "reachability": "in-game development surface, 12 call sites. Not player-facing by owner intent.",
    "regions": "see PHASE0_SCREEN_INVENTORY.md",
    "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
    "unknowns": []
@@ -328,6 +332,66 @@
    "regions": "see PHASE0_SCREEN_INVENTORY.md",
    "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
    "unknowns": []
+  },
+  {
+   "id": "DEV-BATTLELAYOUT",
+   "name": "Battle Layout (diagnostic tool)",
+   "type": "development_diagnostic_surface",
+   "implementation": "battle-layout.html \u2014 standalone HTML at the repository root, separate from index.html",
+   "evidence": "VERIFIED_ROUTE",
+   "reachability": "CLOSED P0-U003 \u2014 RUNTIME VERIFIED: loads by direct URL in the current deployment. Owner intent: created to troubleshoot Battle art/layout. NOT a player-facing game screen. Publicly reachable.",
+   "regions": "n/a \u2014 diagnostic tool, outside the v2 screen scope",
+   "assets": "reads production assets for diagnosis; not a v2 art surface",
+   "unknowns": [],
+   "size": "11 KB"
+  },
+  {
+   "id": "DEV-LAYOUTSTUDIO",
+   "name": "Layout Studio (diagnostic tool)",
+   "type": "development_diagnostic_surface",
+   "implementation": "layout-studio.html \u2014 standalone HTML at the repository root, separate from index.html",
+   "evidence": "VERIFIED_ROUTE",
+   "reachability": "CLOSED P0-U003 \u2014 RUNTIME VERIFIED: loads by direct URL in the current deployment. Owner intent: created to troubleshoot Battle art/layout. NOT a player-facing game screen. Publicly reachable.",
+   "regions": "n/a \u2014 diagnostic tool, outside the v2 screen scope",
+   "assets": "reads production assets for diagnosis; not a v2 art surface",
+   "unknowns": [],
+   "size": "2.5 MB"
+  },
+  {
+   "id": "DEV-WIREFRAME",
+   "name": "Wireframe (diagnostic tool)",
+   "type": "development_diagnostic_surface",
+   "implementation": "wireframe.html \u2014 standalone HTML at the repository root, separate from index.html",
+   "evidence": "VERIFIED_ROUTE",
+   "reachability": "CLOSED P0-U003 \u2014 RUNTIME VERIFIED: loads by direct URL in the current deployment. Owner intent: created to troubleshoot Battle art/layout. NOT a player-facing game screen. Publicly reachable.",
+   "regions": "n/a \u2014 diagnostic tool, outside the v2 screen scope",
+   "assets": "reads production assets for diagnosis; not a v2 art surface",
+   "unknowns": [],
+   "size": "74 KB"
+  },
+  {
+   "id": "DBG-INSPECTOR",
+   "name": "Inspector control (Settings row)",
+   "type": "development_debug_control",
+   "implementation": "#setEruda button, injects eruda.js and calls eruda.init()",
+   "evidence": "VERIFIED_CODE + RUNTIME",
+   "reachability": "CLOSED P0-U004 \u2014 RUNTIME VERIFIED: the row IS visible in Settings and is player-reachable; tapping Open DOES NOT launch the console in the live deployment. Ungated by any conditional in code. Debug UI, not a final player feature.",
+   "regions": "one row within SCR-SETTINGS",
+   "assets": "none",
+   "unknowns": []
+  },
+  {
+   "id": "DBG-DEVUNLOCK",
+   "name": "Dev unlock control (Settings row)",
+   "type": "development_debug_control",
+   "implementation": "devUnlockAll(); source labels the block \"REMOVE BEFORE RELEASE\"",
+   "evidence": "VERIFIED_CODE + RUNTIME",
+   "reachability": "CLOSED P0-U004 \u2014 RUNTIME VERIFIED: visible and functional. Owner intent: testing only, unlocks disciplines and grants resources, to be removed before release.",
+   "regions": "one row within SCR-SETTINGS",
+   "assets": "none",
+   "unknowns": []
   }
- ]
+ ],
+ "blocking_unknowns": 0,
+ "runtime_evidence": "owner-supplied runtime results, 2026-08-29"
 }

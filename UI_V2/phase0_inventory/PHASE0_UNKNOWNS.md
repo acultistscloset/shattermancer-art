@@ -1,75 +1,89 @@
 # Phase 0 — Unresolved Items
 
-Every item states why repository inspection cannot settle it and what runtime
-check would.
+Updated 2026-08-29 with owner-supplied runtime results.
 
-## Blocking
+**Blocking unknowns: 0.**
 
-### P0-U001 — `showSpellbook` is defined but never called
-Repository inspection finds the function and zero call sites. Static analysis
-cannot prove a surface is unreachable: it may be invoked dynamically, bound by
-string, or triggered from a path not expressed as a direct call.
-**Affects:** SCR-SPELLBOOK.
-**Runtime check:** exercise every menu and in-run path and record whether a
-spellbook surface ever appears. If it does, capture how it was reached.
-**Blocking:** yes — a v2 inventory cannot state whether this screen exists.
+---
 
-### P0-U002 — `assets/Battle2/` is present but unreferenced
-17 files, all duplicated by name in `assets/battle/`, and `assets.json` refers
-to none of them. `index.html` contains zero literal occurrences of `Battle2`.
-Note the capital B, which differs from the `battle2` namespace abandoned during
-the vNext migration. Repository inspection cannot prove no path constructs the
-name at runtime.
-**Affects:** asset dependency inventory.
-**Runtime check:** load the game with the directory temporarily renamed and
-watch the network panel for 404s. **Do not delete it as part of this check.**
-**Blocking:** yes — it determines whether 17 files are live or legacy.
+## CLOSED
 
-### P0-U003 — Three alternate HTML entry points exist at the repository root
-`battle-layout.html`, `layout-studio.html` and `wireframe.html` are served
-alongside `index.html`. Repository inspection cannot establish whether the
-deployment exposes them, nor whether any is reachable in production.
-**Affects:** entry points, duplicate implementations.
-**Runtime check:** request each path against the live deployment and record the
-status code.
-**Blocking:** yes — they may be publicly reachable UI surfaces.
+### P0-U001 — `showSpellbook` reachability — CLOSED
+**By deeper static inspection.** Zero call sites; the identifier appears twice,
+as its own definition and one comment. No dynamic dispatch exists anywhere in
+the file — no `window[…]` lookup, no `eval`, no `new Function`, no
+string-indexed `["show…"]`, no inline `onclick`. The sole dispatch mechanism is
+`data-go`, and its `"spells"` value routes to `showLoadout`. The source
+documents the decision explicitly.
+**Disposition:** dormant code path, deliberately superseded. **Not a v2 surface.**
 
-### P0-U004 — `eruda.js`, an on-device developer console, ships in the repository
-499,928 bytes, referenced 8 times by `index.html`, toggled by a runtime
-condition. Repository inspection cannot establish who can trigger it in
-production.
-**Affects:** debug/dev UI.
-**Runtime check:** determine the trigger and whether it fires in a normal
-session.
-**Blocking:** yes — a reachable inspector is a UI surface the inventory must
-account for.
+### P0-U002 — `assets/Battle2/` runtime usage — CLOSED
+**By deeper static inspection.** Every asset path is produced by
+`artPath(bucket, key)`, a pure manifest lookup that returns a stored value or
+null and cannot synthesise a path. There are zero string concatenations from
+`"assets/"`, zero template literals building asset paths, and zero literal
+occurrences of `Battle2` or `battle2` in the production file. Since a request
+can only originate from a manifest value, and no manifest value names that
+directory, its 17 files cannot be requested.
+**Disposition:** unreachable legacy content, **recorded and retained. Not
+deleted during Phase 0.**
 
-## Non-blocking
+### P0-U003 — Alternate root HTML entry points — CLOSED
+**By runtime test.** All five paths load in the current deployment:
+`/battle-layout.html`, `/layout-studio.html`, `/wireframe.html`, `/eruda.js`,
+`/localStorage.json`.
 
-### P0-U005 — 61 asset files on disk are unreferenced by `assets.json`
-Battle2 17, battle 26, ui 9, icons 6, fx 3. Some are plausibly state variants or
-superseded art, but repository inspection cannot separate "legacy" from "loaded
-by a path I did not find".
+**Owner context:** the three HTML pages were created deliberately as
+diagnostic/development tools for troubleshooting Battle art and layout.
+
+**Disposition:** classified as **development/diagnostic surfaces**, recorded as
+**publicly reachable by direct URL in the current deployment**. They are **not**
+player-facing game screens and are **not** counted as such. Direct URL
+reachability alone does not make a diagnostic tool a game screen.
+
+### P0-U004 — `eruda.js` reachability — CLOSED
+**Trigger identified statically, then confirmed by runtime test.** The trigger
+is a click on `#setEruda`, a button labelled "Open" in an "Inspector" row built
+unconditionally into the Settings screen; it injects `eruda.js` and calls
+`eruda.init()`. No conditional gates it.
+
+**Runtime result:** the Inspector row **is** visible in Settings and is
+player-reachable. Tapping Open **does not** launch the console overlay in the
+live deployment. A Dev unlock control **is** visible and functional.
+
+**Owner context:** Dev unlock exists intentionally for testing — it unlocks
+disciplines and grants test resources — and is intended to be removed before
+release. The source itself labels the block "REMOVE BEFORE RELEASE".
+
+**Disposition:** both recorded as **development/debug UI, not intended final
+player-facing features**. Inspector UI is player-reachable; Inspector activation
+is currently nonfunctional in the live deployment on runtime observation.
+**Neither removed nor redesigned in Phase 0.**
+
+---
+
+## Open — non-blocking
+
+### P0-U005 — 61 unreferenced asset files
+Battle2 17 (closed as legacy under P0-U002), battle 26, ui 9, icons 6, fx 3.
+The remaining 44 are candidates, not conclusions.
 **Runtime check:** capture all network requests across a full run and diff
 against the file list.
 
 ### P0-U006 — `localStorage.json` at the repository root
-A 3,583-byte file whose relationship to the two runtime keys (`rw_lesson_done`,
-`rw_tut`) is not established by inspection. It may be a captured state dump.
+Confirmed publicly reachable under P0-U003, but its relationship to the two
+runtime keys is still unestablished.
 **Runtime check:** confirm whether anything loads it.
 
 ### P0-U007 — Save/resume model appears absent
 No `SAVE_KEY`, `loadRun`, `saveRun`, `continueRun` or `hasSave` symbols; the two
-localStorage keys are tutorial flags. A "Continue" concept could not be found.
-**Runtime check:** start a run, reload the page, and record what happens.
+persisted keys are tutorial flags. No Continue entry point was found.
+**Runtime check:** start a run, reload the page, record what happens.
 
-### P0-U008 — Screen/overlay classification is partly inferred
-Surfaces were classed by whether their builder calls `showScreen` or manipulates
-an overlay node. Several could be either in practice.
-**Runtime check:** visit each and record whether it replaces the screen or
-layers over it.
+### P0-U008 — Screen versus overlay classification is partly inferred
+Classed by whether a builder calls `showScreen` or manipulates an overlay node.
+**Runtime check:** visit each and record whether it replaces or layers.
 
 ### P0-U009 — Victory and defeat surfaces not separately identified
-`showSummary` exists and is called from three sites; distinct victory and defeat
-screens were not found as separate builders.
-**Runtime check:** win and lose a run, and record whether the surfaces differ.
+`showSummary` exists with three call sites; no distinct victory screen found.
+**Runtime check:** win and lose a run, record whether the surfaces differ.
