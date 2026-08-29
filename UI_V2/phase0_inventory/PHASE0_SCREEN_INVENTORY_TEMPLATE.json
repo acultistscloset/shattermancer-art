@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "project": "Shattermancer",
+  "phase": "UI v2 Phase 0 - Complete Game Inventory",
+  "screens": [
+    {
+      "screen_id": "screen.example",
+      "screen_name": "Example Screen",
+      "screen_type": "full_screen",
+      "status": "current|legacy|debug|unknown",
+      "reachability": "verified|inferred|unknown",
+      "implementation_files": [],
+      "entry_points": [],
+      "exit_routes": [],
+      "purpose": "",
+      "regions": [],
+      "controls": [],
+      "dynamic_content": [],
+      "visual_states": [],
+      "navigation": {
+        "inbound": [],
+        "outbound": [],
+        "back_behavior": "",
+        "conditional_routes": []
+      },
+      "scrolling_and_sizing": {
+        "scroll_axis": "none|vertical|horizontal|both|unknown",
+        "scroll_container": "",
+        "safe_area_behavior": "",
+        "viewport_dependencies": [],
+        "overflow_or_clipping": []
+      },
+      "assets": [],
+      "animations": [],
+      "game_state_dependencies": [],
+      "legacy_or_unused_candidates": [],
+      "possible_duplicate_implementations": [],
+      "implementation_ambiguities": [],
+      "runtime_checks_needed": [],
+      "missing_evidence": [],
+      "evidence_summary": []
+    }
+  ]
+}

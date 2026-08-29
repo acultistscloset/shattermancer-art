@@ -1,94 +1,47 @@
 # Shattermancer UI v2 --- Master Status
 
-**Document role:** Primary project ledger and restart point\
-**Gate:** 000 --- Project Governance\
-**Status:** GATE 000 REVIEW --- NOT YET LOCKED\
-**Design source of truth:** `Shattermancer-art/UI_V2/`\
-**Production source of truth:** `Shattermancer/`
+**Current Phase:** PHASE 0 --- COMPLETE GAME INVENTORY\
+**Status:** IN PROGRESS\
+**Last Approved Gate:** Gate 000 --- Project Governance\
+**Last Approved Checkpoint:** `ui-v2-000-project-governance`\
+**Next Approval Checkpoint:** `ui-v2-phase0-approved`
 
-## Current checkpoint
+## Current objective
 
-Candidate: `ui-v2-000-project-governance`
+Produce a complete evidence-based inventory of the existing production
+game before any v2 redesign decisions begin.
 
-## Current phase
+## Phase 0 rule
 
-**PRE-PHASE --- PROJECT GOVERNANCE**
+This phase is **audit only**.
 
-## Next required action
+Do not: - redesign screens; - choose final UI metaphors; - define final
+visual styling; - commission production art; - implement v2 screens; -
+change final geometry.
 
-Review and explicitly approve or revise Gate 000. After approval:
-**PHASE 0 --- COMPLETE GAME INVENTORY**.
+## Current required work
 
-## Do not begin yet
+1.  Run the production-repo audit using the Phase 0 schema.
+2.  Review Claude's evidence-backed inventory.
+3.  Resolve unknowns/omissions.
+4.  Build the definitive screen/navigation/state inventory.
+5.  Complete the Phase 0 gate review.
+6.  Obtain explicit owner approval before Phase 1 begins.
 
--   production UI art
--   v2 screen implementation
--   individual-screen visual redesign
--   final geometry
--   final asset commissioning
--   legacy UI removal
+## Required Phase 0 deliverables
 
-## Initial decisions
+-   `PHASE0_SCREEN_INVENTORY.md`
+-   `PHASE0_SCREEN_INVENTORY.json`
+-   `PHASE0_NAVIGATION_MAP.md`
+-   `PHASE0_ASSET_DEPENDENCIES.md`
+-   `PHASE0_UNKNOWNS.md`
+-   `PHASE0_REPO_AUDIT_REPORT.md`
+-   `PHASE0_GATE_REVIEW.md`
 
-  ----------------------------------------------------------------------------------------
-  ID                      Decision                                 Status
-  ----------------------- ---------------------------------------- -----------------------
-  UIV2-D001               Comprehensive UI v2 redesign, not        LOCKED-IN-PRINCIPLE
-                          game-wide incremental restyling          
+## Authority
 
-  UIV2-D002               Medium-density dark-fantasy pixel-art    LOCKED-IN-PRINCIPLE
-                          direction                                
+The production `Shattermancer` repository is evidence for current
+behavior and implementation.
 
-  UIV2-D003               Approx. 360 logical pixels horizontal    PROVISIONALLY LOCKED
-                          art density; viewport geometry defined   
-                          separately                               
-
-  UIV2-D004               Pixel art authored natively, not         LOCKED-IN-PRINCIPLE
-                          post-pixelated painting                  
-
-  UIV2-D005               Specification/wireframe/geometry/asset   LOCKED-IN-PRINCIPLE
-                          requirements precede production UI art   
-
-  UIV2-D006               v2 screens built separately beside v1    LOCKED-IN-PRINCIPLE
-                          and swapped only after validation        
-
-  UIV2-D007               Reuse appropriate game logic/state;      LOCKED-IN-PRINCIPLE
-                          legacy visual DOM/CSS is not v2 visual   
-                          authority                                
-
-  UIV2-D008               Migration occurs screen-by-screen, not   LOCKED-IN-PRINCIPLE
-                          as one global visual cutover             
-  ----------------------------------------------------------------------------------------
-
-These become formally `LOCKED` only when Gate 000 is approved.
-
-## Phase ledger
-
-    Phase Name                      Status        Checkpoint
-  ------- ------------------------- ------------- --------------------------------
-      000 Project Governance        REVIEW        `ui-v2-000-project-governance`
-        0 Complete Game Inventory   NOT STARTED   `ui-v2-phase0-approved`
-        1 Visual Identity           NOT STARTED   `ui-v2-phase1-approved`
-        2 Global Design System      NOT STARTED   `ui-v2-phase2-approved`
-        3 Screen Specifications     NOT STARTED   `ui-v2-phase3-approved`
-        4 Art-Free Wireframes       NOT STARTED   `ui-v2-phase4-approved`
-        5 Geometry Contracts        NOT STARTED   `ui-v2-phase5-approved`
-        6 Stress Testing            NOT STARTED   `ui-v2-phase6-approved`
-        7 Complete Asset Manifest   NOT STARTED   `ui-v2-phase7-approved`
-        8 Art Production            NOT STARTED   staged art gates
-        9 v2 Implementation         NOT STARTED   staged implementation gates
-       10 Screen Cutover            NOT STARTED   per-screen gates
-       11 Legacy Removal            NOT STARTED   final cleanup gate
-
-## Universal advancement rule
-
-A phase advances only when its deliverables exist, blocking unresolved
-items are zero, a completion review is presented, the owner explicitly
-approves, approval is recorded, and the repository receives the
-checkpoint.
-
-## Restart protocol
-
-In a new conversation: read this file, governance, current phase file,
-relevant locked decisions, then only the screen/spec/geometry files
-needed for the current task. Repository authority wins over chat memory.
+Phase 0 documents describe what currently exists. They do not become v2
+design authority for appearance merely because something exists in v1.
