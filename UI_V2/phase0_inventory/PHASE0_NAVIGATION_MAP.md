@@ -12,8 +12,8 @@ Title  ->  Discipline Selection  ->  Loadout  ->  The Path (map)
                     |            |            |            |
                  Battle       Sanctum        Camp       Treasure
                     |            |            |            |
-                 Reward /   (back to map) (back to map) (back to map)
-                 Node Reward
+                 Reward /   (back to map) (back to map)  afterNode()
+                 Node Reward                              -> back to map
                     |
                  The Path  ->  ...  ->  Run Summary  ->  Title
 ```
@@ -36,12 +36,37 @@ Title  ->  Discipline Selection  ->  Loadout  ->  The Path (map)
 | `openShop`, `showRest`, `showReward`, `showNodeReward`, `showCharacter`, `showGlossary`, `showTreasure` | 1 each | |
 | ~~`showSpellbook`~~ | 0 | **CLOSED P0-U001** — dormant, superseded by `showLoadout`. Not a navigable target. |
 
+## Path node types — exactly six (owner-confirmed, Group 2)
+
+**Creature · Elite · Sanctum · Camp · Treasure · Boss**
+
+Other node concepts appearing in historical discussion were discontinued or
+superseded and are **not** missing features.
+
+Destination selection is **two-stage** — select destination/seal, then Confirm.
+**Far See** is a temporary look-ahead, not a full-map view. A full-map
+presentation was **intentionally superseded** by the over-the-shoulder Path.
+
+## The Map tool row
+
+`drawPath` builds four controls over the painted path-tools banner. This is the
+only route to the loadout screen:
+
+```
+Map -> [Character]  showCharacter("map")
+    -> [Spells]     showLoadout("map")     four-spell selection, max 4
+    -> [Talents]    showTalents(...)
+    -> [Settings]   showSettings(...)
+```
+
+Each replaces the screen; each returns to the Map.
+
 ## Modal and transient overlays
 
 These layer over whatever screen is present rather than replacing it:
 
 ```
-any screen  ->  #picker      (openPicker, openManaPicker, openChoice)
+any screen  ->  #picker      (openPicker, openManaPicker, openChoice)  -- the only true overlays
 any screen  ->  #tipCard     (showTip)
 any screen  ->  #toast
 any screen  ->  #banner
@@ -64,9 +89,18 @@ battle      ->  #fx          (18 declared sprite sheets)
 ## Back and resume paths
 
 - Back paths to `showTitle` and `showMap` are the dominant return edges.
-- **No save/continue/resume path was found.** No `SAVE_KEY`, `loadRun`,
-  `saveRun`, `continueRun` or `hasSave` symbols exist; the only persisted keys
-  are the two tutorial flags. Recorded as P0-U007 rather than concluded.
+- **Trials Back is currently incorrect.** Settings opens Trials with
+  `"settings"`, but the handler is `back === "title" ? showTitle() : showMap()`,
+  so `"settings"` falls through: during a run it misroutes to The Path, and with
+  no valid run it reaches `showMap()` with no run state. Recorded as a current
+  bug in `PHASE0_OWNER_REVIEW.md`.
+- **CORRECTED 2026-08-29.** The original text here claimed no save or resume
+  path existed. That was wrong. `RUNSAVE.store()` writes the active run on entry
+  to **`showMap()`** — so **The Path is the active-run checkpoint** — and
+  Continue is wired to `RUNSAVE.resume()`, which restores the run and returns to
+  The Path. `RUNSAVE.clear()` runs at `showTitle`, `startAnew` and
+  `showSummary`. Node progress is **not** checkpointed mid-encounter.
+  **P0-U007 is CLOSED as a resolved static-audit miss.**
 
 ## Run-ending paths
 
@@ -92,3 +126,15 @@ Owner context: created to troubleshoot Battle art and layout. `/eruda.js` and
 No evidence was found for: a pause screen, a loading/transition screen, a
 dedicated confirmation-dialog screen distinct from `openChoice`, or a
 continue-run entry on the title. Recorded as "not found", not as "absent".
+
+## Classification correction, 2026-08-29
+
+`showLoadout` and `showTreasure` were previously recorded as overlays. Both
+**replace** the screen — `showLoadout` via `showScreen`, `showTreasure` via
+`showScreenWithStatus`. The original classifier inspected only the first ~900
+characters of each function and tested the literal `showScreen` alone, so it
+missed a call that sat past that window and missed the `WithStatus` wrapper
+entirely. All 23 UI builders were re-tested on their whole bodies.
+
+**Result: 17 full screens, 3 modals, 0 overlays.** The only surfaces that layer
+rather than replace are the three `#picker` modals and the tip card.

@@ -4,6 +4,19 @@ Updated 2026-08-29 with owner-supplied runtime results.
 
 **Blocking unknowns: 0.**
 
+**Open non-blocking items: 4** — P0-U005, P0-U006, P0-U009, P0-U010.
+
+**Change history.** P0-U001 to U004 closed during the blocking-unknown
+resolution pass. **P0-U008 closed earlier, in the classification-integrity
+pass** that followed the confirmed `showLoadout` misclassification. The Group 2
+owner-review update then **closed P0-U007** and **opened P0-U010**, leaving the
+open count unchanged at four:
+
+| | before Group 2 | after Group 2 |
+|---|---|---|
+| open | U005, U006, **U007**, U009 | U005, U006, U009, **U010** |
+| count | 4 | 4 |
+
 ---
 
 ## CLOSED
@@ -75,15 +88,77 @@ Confirmed publicly reachable under P0-U003, but its relationship to the two
 runtime keys is still unestablished.
 **Runtime check:** confirm whether anything loads it.
 
-### P0-U007 — Save/resume model appears absent
-No `SAVE_KEY`, `loadRun`, `saveRun`, `continueRun` or `hasSave` symbols; the two
-persisted keys are tutorial flags. No Continue entry point was found.
-**Runtime check:** start a run, reload the page, record what happens.
+### P0-U007 — Save/resume model — **CLOSED 2026-08-29: RESOLVED STATIC-AUDIT MISS**
 
-### P0-U008 — Screen versus overlay classification is partly inferred
-Classed by whether a builder calls `showScreen` or manipulates an overlay node.
-**Runtime check:** visit each and record whether it replaces or layers.
+**The original finding was wrong, and it is preserved here rather than deleted.**
+
+> *Original text:* "No `SAVE_KEY`, `loadRun`, `saveRun`, `continueRun` or
+> `hasSave` symbols; the two localStorage keys are tutorial flags. A 'Continue'
+> concept could not be found."
+
+**Reinspection of the same production file** — 882,355 bytes, sha256
+`2c908e9d…` — verified a complete persistence system that was present all along:
+
+| symbol | role |
+|---|---|
+| `rw_save_v1` | **persistent profile** — unlocked disciplines, spells, masteries, banked shards, talent trees, run counts |
+| `rw_run_v1` | **active run** |
+| `RUNSAVE.store()` | called from **`showMap()`**, refusing to write in sandbox or tutorial |
+| `RUNSAVE.peek()` | validates the parsed run: requires a `wizard` and a non-empty `map` |
+| `RUNSAVE.resume()` | restores `RUN`, reapplies relic max-HP, calls `showMap()` |
+| `RUNSAVE.clear()` | called from `showTitle`, `startAnew`, `showSummary` |
+
+**The Path is the active-run checkpoint** — the only write happens on entry to
+`showMap()`, and resume returns there. **Node progress is not checkpointed
+mid-encounter.** Continue is wired to `RUNSAVE.resume()`.
+
+**Why the original audit missed it.** The search used five **invented identifier
+names** — `SAVE_KEY`, `loadRun`, `saveRun`, `continueRun`, `hasSave` — none of
+which appear in the source. The real system stores its keys as **string literals
+inside object definitions** (`KEY:"rw_run_v1"`) with methods named
+`store`/`peek`/`resume`/`clear`. The symbols were present in the text that had
+already been extracted; the failure was searching for guessed names instead of
+enumerating the actual `localStorage` calls. **Not a missing-source problem.**
+
+### P0-U008 — Screen versus overlay classification — **CLOSED 2026-08-29**
+**Closed by static re-inspection, not by runtime test.**
+
+The original classifier was faulty in two ways: it inspected only the first ~900
+characters of each builder, and it tested for the literal `showScreen` alone. It
+therefore missed a call sitting past that window (`showLoadout`) and missed the
+`showScreenWithStatus` wrapper entirely (`showTreasure`, `showRest`,
+`showReward`, `showNodeReward`).
+
+**All 23 UI builders were re-tested on their whole bodies**, checking for
+`showScreen` OR `showScreenWithStatus` OR a `#picker`/`.show` overlay node.
+Three builders that call neither delegate to a renderer — `showMap` to
+`drawPath`, `openShop` to `renderShop`, `showBattle` to the `inBattle` body
+class — and all three replace the screen.
+
+**Result: 17 full screens, 3 modals, 0 overlays.** Two records were wrong and
+are corrected: `SCR-LOADOUT` and `SCR-TREASURE`, both overlay -> full_screen.
+The only surfaces that layer rather than replace are the three `#picker` modals
+and the tip card.
+
+**No runtime check is required.** Every classification now rests on
+`VERIFIED_CODE`.
 
 ### P0-U009 — Victory and defeat surfaces not separately identified
 `showSummary` exists with three call sites; no distinct victory screen found.
 **Runtime check:** win and lose a run, record whether the surfaces differ.
+
+### P0-U010 — Boss / act-transition full heal — OPEN, non-blocking
+Opened by the Group 2 owner review. The owner recalls and expects a **full heal**
+associated with boss defeat and/or the beginning of a new act. **No
+implementation claim is made here.**
+
+**Scope, narrowly:** verify the exact current full-heal behaviour following boss
+defeat and act transition —
+- whether the heal is **unconditional or conditional**;
+- whether it occurs in `bossDefeated`, `beginAct`, another transition, or in
+  **more than one place**.
+
+**Method:** a targeted implementation trace of the production snapshot. **Do not
+guess the result.**
+
+This item does **not** revoke Group 2 owner approval.

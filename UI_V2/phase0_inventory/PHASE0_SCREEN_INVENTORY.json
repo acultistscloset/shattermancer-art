@@ -6,12 +6,11 @@
   "development_diagnostic_surface": 3,
   "development_screen": 1,
   "dormant_code_path": 1,
-  "full_screen": 15,
+  "full_screen": 17,
   "modal": 3,
-  "overlay": 2,
   "persistent_panel": 2,
-  "transient": 5,
-  "total": 34
+  "transient": 6,
+  "total": 35
  },
  "screens": [
   {
@@ -105,10 +104,10 @@
   {
    "id": "SCR-TREASURE",
    "name": "Treasure",
-   "type": "overlay",
-   "implementation": "showTreasure",
+   "type": "full_screen",
+   "implementation": "showTreasure() -> showScreenWithStatus -> showScreen",
    "evidence": "VERIFIED_CODE",
-   "reachability": "map node",
+   "reachability": "CORRECTED 2026-08-29. Inbound: a map node of type \"treasure\". Offers one of relic / gold / vials. REPLACES the screen. Outbound: any choice, or #trGo, calls afterNode() and returns to the Map.",
    "regions": "see PHASE0_SCREEN_INVENTORY.md",
    "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
    "unknowns": []
@@ -203,11 +202,11 @@
   },
   {
    "id": "SCR-LOADOUT",
-   "name": "Loadout",
-   "type": "overlay",
-   "implementation": "showLoadout",
+   "name": "Spells (loadout) \u2014 four-spell selection",
+   "type": "full_screen",
+   "implementation": "showLoadout(back) -> showScreen",
    "evidence": "VERIFIED_CODE",
-   "reachability": "pre-run",
+   "reachability": "CORRECTED 2026-08-29. Reachable from the MAP tool row via data-go=\"spells\", which dispatches showLoadout(\"map\"). MAX_EQUIPPED = 4: the screen reads \"Carrying N of 4\". Sections Carried and Set aside; per-spell equip/unequip, refusing below one carried spell. REPLACES the screen via showScreen. Back (\"Back to the path\") returns to the Map; a back=\"settings\" route exists in code with no observed caller. Character is a SEPARATE screen that never touches RUN.spells.",
    "regions": "see PHASE0_SCREEN_INVENTORY.md",
    "assets": "see PHASE0_ASSET_DEPENDENCIES.md",
    "unknowns": []
@@ -390,8 +389,21 @@
    "regions": "one row within SCR-SETTINGS",
    "assets": "none",
    "unknowns": []
+  },
+  {
+   "id": "OVL-FLOATTEXT",
+   "name": "Floating damage / heal / block values",
+   "type": "transient",
+   "implementation": "floatText(el, text, className) \u2014 spawns a short-lived value near a target element",
+   "evidence": "VERIFIED_CODE",
+   "reachability": "Battle only. Triggered on damage dealt and taken, healing, and block gained; the enemy guard branch calls it directly. Non-blocking.",
+   "regions": "anchored to the enemy sprite, player panel or the element concerned",
+   "assets": "none \u2014 text with CSS classes",
+   "unknowns": []
   }
  ],
  "blocking_unknowns": 0,
- "runtime_evidence": "owner-supplied runtime results, 2026-08-29"
+ "runtime_evidence": "owner-supplied runtime results, 2026-08-29",
+ "classification_method": "Corrected 2026-08-29. Records are classified on the WHOLE function body, testing for showScreen OR showScreenWithStatus OR a #picker/.show overlay node. The original pass inspected only the first ~900 characters and tested the literal showScreen only, which misclassified showLoadout and showTreasure. All 23 UI builders were re-tested.",
+ "count_change_note": "Group 3, 2026-08-29: OVL-FLOATTEXT added. transient 5 -> 6, total 34 -> 35. floatText is a distinct player-visible transient \u2014 short-lived numeric values anchored to a target element \u2014 and is NOT the #fx sprite layer already recorded as OVL-FX. Battle FX, tip card and picker were checked and are already recorded (OVL-FX, OVL-TIP, OVL-PICKER); none was duplicated. No full_screen, modal or overlay count changed."
 }

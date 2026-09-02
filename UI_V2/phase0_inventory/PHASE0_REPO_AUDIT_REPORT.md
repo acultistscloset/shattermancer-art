@@ -69,11 +69,78 @@ store, no framework. Render functions read that state directly.
 
 ## Save / load model relevant to UI
 
-**No save or resume system was found.** No `SAVE_KEY`, `loadRun`, `saveRun`,
-`continueRun` or `hasSave` symbols exist. `localStorage` is used 12 times for
-exactly two keys, both tutorial flags: `rw_lesson_done` and `rw_tut`. There is
-no evidence of a Continue entry point. Recorded as **P0-U007** rather than
-concluded, since absence in code is weaker evidence than presence.
+**CORRECTED 2026-08-29. The original result was wrong and is preserved below as
+an audit trail.**
+
+> *Original finding:* "No save or resume system was found. No `SAVE_KEY`,
+> `loadRun`, `saveRun`, `continueRun` or `hasSave` symbols exist… There is no
+> evidence of a Continue entry point."
+
+**Reinspection of the same file verified a complete persistence system:**
+
+| symbol | role |
+|---|---|
+| `rw_save_v1` | **persistent profile** — unlocked disciplines, spells, masteries, banked shards, talent trees, run counts |
+| `rw_run_v1` | **active run** |
+| `SAVE` | the profile object |
+| `RUNSAVE` | the active-run object, with `store` / `peek` / `resume` / `clear` |
+
+- **`RUNSAVE.store()` is called from `showMap()`**, and nowhere else. It refuses
+  to write during sandbox or tutorial.
+- **The Path is therefore the active-run checkpoint**: the run is written every
+  time the player reaches it and at no other moment. **Node progress is not
+  checkpointed mid-encounter.**
+- **Continue is wired to `RUNSAVE.resume()`**, which validates the stored run,
+  restores it, and returns to The Path.
+- `RUNSAVE.clear()` is called from `showTitle`, `startAnew` and `showSummary`.
+
+**Why the earlier result was wrong.** The search used five **invented identifier
+names**, none of which appear in the source. The real system stores its keys as
+**string literals inside object definitions** (`KEY:"rw_run_v1"`). The symbols
+were present in text the audit had already extracted — **this was a
+search-vocabulary failure, not a missing-source problem.** Enumerating the actual
+`localStorage` calls would have found both keys immediately.
+
+**P0-U007 is CLOSED as a resolved static-audit miss.**
+
+## Battle / combat surface — Group 3 findings
+
+**Current-production evidence.** Owner-approved future requirements are recorded
+separately in `PHASE0_OWNER_REVIEW.md` and `02_DECISION_LOG.md`, not here.
+
+**Result model.** `evaluateGuess()` returns **three** per-slot tokens —
+`exploit`, `resonate`, `resist` — surfaced to the player as **Fracture,
+Resonate, Resist**. **Echo is a modifier**, applied as an added class on an
+existing pip. **Veiled substitutes** a marker in place. **Shatter** is the
+whole-incantation outcome when every slot is Fracture. **`exploit` never appears
+player-facing**; the legend contains exactly Fracture, Resonate, Resist, Echo
+and Veiled.
+
+**Incantation length.** Currently 3--5 runes by creature. **The implementation
+must not be treated as fixing length for an encounter** --- enemy mechanics can
+change it mid-fight (UIV2-D010).
+
+**Turn model.** Spells and vials **do not ordinarily consume the turn**; up to
+three vials per turn, and spells are explicitly "free of the turn" in source.
+**CAST is the ordinary turn-ending action.** Invalid or repeated casts are
+rejected without advancing.
+
+**Vial sockets.** `renderPotions` draws a fixed `for (s = 0; s < 6; s++)` --- 3
+left, 3 right, with sockets beyond capacity marked `beyond`. **A seventh carried
+vial is therefore unreachable in Battle**, compounding the capacity discrepancy.
+
+**Boss behaviour.** Bosses reuse the same surface but may alter fundamental
+rules. The Chorus's four-phase cycle is **one boss's mechanic**, shown in the
+existing intent region --- **not a general boss pattern** (UIV2-D013).
+
+**Transient layers.** toast, banner, floating values, FX --- non-blocking; tip
+card --- dismissible overlay; picker --- **blocking modal**. None is a full screen.
+
+**HOOKS ARE NOT FEATURES.** Twenty-two distinct `playSfx` keys and five
+`playMusic` calls exist, and `navigator.vibrate` appears twice. **Owner
+correction: game audio assets are not yet implemented, and haptics are not an
+active finished system.** Both are **code-level trigger points only** and must
+not be described as working features (UIV2-D015).
 
 ## Duplicate and legacy implementation findings
 
@@ -90,6 +157,10 @@ concluded, since absence in code is weaker evidence than presence.
 4. **Dev unlock** — a Settings row, **visible and functional**, which unlocks
    disciplines and grants resources. The source labels it "REMOVE BEFORE
    RELEASE". Owner intent: testing only, removed before release.
+
+   **Owner review note (Group 2):** relic selling at the Sanctum, via the
+   `fences_contact` relic, is **intended and may remain**. It is **not** legacy,
+   **not** slated for removal, and **not** a discrepancy.
 5. **Sandbox** — an in-game development screen with 12 call sites.
 6. **`showSpellbook`** — **P0-U001, CLOSED:** zero call sites and no dynamic
    dispatch of any kind exists in the file; `data-go="spells"` routes to
@@ -103,8 +174,13 @@ concluded, since absence in code is weaker evidence than presence.
 
 - **Static analysis cannot prove unreachability.** Every "never called" or
   "unreferenced" finding is a candidate, not a conclusion.
-- **Screen versus overlay classification is partly inferred** from whether a
-  builder calls `showScreen`. **P0-U008.**
+- **Screen versus overlay classification — CORRECTED and CLOSED (P0-U008).**
+  The original classifier inspected only the first ~900 characters of each
+  builder and tested the literal `showScreen` alone, so it missed a call past
+  that window and missed the `showScreenWithStatus` wrapper. All 23 UI builders
+  were re-tested on their whole bodies. **Two records were wrong:**
+  `SCR-LOADOUT` and `SCR-TREASURE`, both overlay -> full_screen. Final counts:
+  17 full screens, 3 modals, 0 overlays.
 - **The snapshot is a point-in-time copy.** It matches a known accepted state
   but not the auditor's current workspace, which is deliberately ahead of it.
 - **Regions and controls are inventoried in depth only for the battle screen**,
@@ -116,9 +192,10 @@ concluded, since absence in code is weaker evidence than presence.
 
 | | count |
 |---|---|
-| **player-facing full screens** | **15** |
-| overlays / modals | **5** |
-| transient / conditional UI states | **5** |
+| **player-facing full screens** | **17** |
+| modals | **3** |
+| overlays | **0** |
+| transient / conditional UI states | **6** |
 | persistent panels | **2** |
 | **player-facing subtotal** | **27** |
 | development screens (in-game) | **1** |
@@ -126,17 +203,25 @@ concluded, since absence in code is weaker evidence than presence.
 | development debug controls (Settings rows) | **2** |
 | **development subtotal** | **6** |
 | dormant code paths (not surfaces) | **1** |
-| **total records** | **34** |
+| **total records** | **35** |
 | total active UI asset dependencies found | **297** |
 | total possible legacy / duplicate implementations | **8** |
-| runtime checks still required (all non-blocking) | **5** |
+| open non-blocking unknowns | **4** — P0-U005, U006, U009, U010 |
 | **blocking unknown count** | **0** |
+
+**Totals changed again 2026-08-29** after the classification-integrity check:
+full screens 15 -> 17, overlays 2 -> 0, as `SCR-LOADOUT` and `SCR-TREASURE` were
+reclassified. `SCR-LOADOUT` is the four-spell selection screen reached from the
+Map tool row.
 
 **Totals changed from the repository-only pass:** `showSpellbook` left the
 full-screen count once P0-U001 closed, and six development surfaces were added
 that a repository-only inspection had not recorded as inventory items. The
 diagnostic HTML pages were never counted as player screens and are not counted
 as such now.
+
+**Owner review:** Group 1 APPROVED, Group 2 APPROVED, Group 3 APPROVED. Phase 0 overall remains
+IN PROGRESS pending the remaining review groups.
 
 PHASE 0 REPO AUDIT: READY FOR OWNER/DESIGN REVIEW
 
